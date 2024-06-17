@@ -1,0 +1,104 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{18E0FCA2-530D-48DD-B4E4-D01800A2276C}|TravelProjectIndia.csproj|c:\\nh\\travelprojectindia_frentend\\travelprojectindia\\views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18E0FCA2-530D-48DD-B4E4-D01800A2276C}|TravelProjectIndia.csproj|solutionrelative:views\\checkout\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18E0FCA2-530D-48DD-B4E4-D01800A2276C}|TravelProjectIndia.csproj|c:\\nh\\travelprojectindia_frentend\\travelprojectindia\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18E0FCA2-530D-48DD-B4E4-D01800A2276C}|TravelProjectIndia.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18E0FCA2-530D-48DD-B4E4-D01800A2276C}|TravelProjectIndia.csproj|c:\\nh\\travelprojectindia_frentend\\travelprojectindia\\views\\package\\packagedetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18E0FCA2-530D-48DD-B4E4-D01800A2276C}|TravelProjectIndia.csproj|solutionrelative:views\\package\\packagedetail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18E0FCA2-530D-48DD-B4E4-D01800A2276C}|TravelProjectIndia.csproj|c:\\nh\\travelprojectindia_frentend\\travelprojectindia\\views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18E0FCA2-530D-48DD-B4E4-D01800A2276C}|TravelProjectIndia.csproj|solutionrelative:views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18E0FCA2-530D-48DD-B4E4-D01800A2276C}|TravelProjectIndia.csproj|c:\\nh\\travelprojectindia_frentend\\travelprojectindia\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{18E0FCA2-530D-48DD-B4E4-D01800A2276C}|TravelProjectIndia.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PackageDetail.cshtml",
+              "DocumentMoniker": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\Views\\Package\\PackageDetail.cshtml",
+              "RelativeDocumentMoniker": "Views\\Package\\PackageDetail.cshtml",
+              "ToolTip": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\Views\\Package\\PackageDetail.cshtml",
+              "RelativeToolTip": "Views\\Package\\PackageDetail.cshtml",
+              "ViewState": "AQIAAJwDAAAAAAAAAAAIwLADAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T06:27:24.132Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\Views\\CheckOut\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\CheckOut\\Index.cshtml",
+              "ToolTip": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\Views\\CheckOut\\Index.cshtml",
+              "RelativeToolTip": "Views\\CheckOut\\Index.cshtml",
+              "ViewState": "AQIAAKcBAAAAAAAAAAAWwMEBAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-08T07:48:32.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAADQAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T07:00:58.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\Views\\Home\\Profile.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Profile.cshtml",
+              "ToolTip": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\Views\\Home\\Profile.cshtml",
+              "RelativeToolTip": "Views\\Home\\Profile.cshtml",
+              "ViewState": "AQIAACMCAAAAAAAAAAAAAF0CAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T05:15:02.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAANgBAAAAAAAAAAAIwPcBAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T18:58:57.75Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

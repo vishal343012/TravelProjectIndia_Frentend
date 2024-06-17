@@ -1,0 +1,660 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+	<title>@ViewData["Title"] - Next Holidays Travel in India</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/TravelProjectIndia.styles.css" asp-append-version="true" />
+
+	<link rel="icon" type="image/png" href="https://d5ohkitzini5f.cloudfront.net/assets/img/favicon.ico">
+
+    @* added by me *@
+    <!-- All Plugins -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/animation.css" rel="stylesheet" />
+    <link href="~/css/dropzone.min.css" rel="stylesheet" />
+    <link href="~/css/flatpickr.min.css" rel="stylesheet" />
+    <link href="~/css/flickity.min.css" rel="stylesheet" />
+    <link href="~/css/lightbox.min.css" rel="stylesheet" />
+    <link href="~/css/magnifypopup.css" rel="stylesheet" />
+    <link href="~/css/select2.min.css" rel="stylesheet" />
+    <link href="~/css/rangeslider.min.css" rel="stylesheet" />
+    <link href="~/css/prism.css" rel="stylesheet" />
+
+    <!-- Fontawesome & Bootstrap Icons CSS -->
+    <link href="~/css/bootstrap-icons.css" rel="stylesheet" />
+    <link href="~/css/fontawesome.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link href="~/css/style.css" rel="stylesheet" />
+
+	<style>
+		#profile{
+			display:none;
+		}
+
+		#crtSectionData
+		{
+			display: none;
+		}
+
+		.closebtn
+		{
+			cursor:pointer
+		}\
+		.cartprice
+		{
+			margin-top:20px;
+		}
+	</style>
+
+</head>
+<body>
+
+	<div id="preloader">
+		<div class="preloader"><span></span><span></span></div>
+	</div>
+
+	<div class="header header-transparent theme">
+		<div class="container">
+			<nav id="navigation" class="navigation navigation-landscape">
+				<div class="nav-header">
+					<a class="nav-brand static-show" href="/"><img src="https://d5ohkitzini5f.cloudfront.net/NHEidlogo.png" class="logo" alt="" /></a>
+					<a class="nav-brand mob-show mt-2" href="/"><img src="https://d5ohkitzini5f.cloudfront.net/NHEidlogo.png" class="logo" alt="" /></a>
+					<div class="nav-toggle"></div>
+
+				</div>
+				<div class="nav-menus-wrapper holiday_nav_menu" style="transition-property: none;">
+					<ul class="nav-menu align-to-right mt-2">
+						<li class="active">
+							<a href="/" target="_blank"> <i class="fa fa-home" aria-hidden="true"></i> Home </a>
+						</li>
+
+						<li>
+							<a href="documantion/index.html" target="_blank"> <i class="fa fa-phone" aria-hidden="true"></i> Enquiry </a>
+						</li>
+
+						<li>
+							<a href="#" onclick="Showcart()" target=""> <i class="fa-solid fa-cart-shopping"></i> Cart</a>
+						</li>
+
+						<li class="currency_aria">
+							<a href="JavaScript:Void(0);">USD<span class="submenu-indicator"></span></a>
+							<ul class="nav-dropdown nav-submenu">
+								<li>
+									<a href="index.html">INR</a>
+								</li>
+								<li>
+									<a href="home-2.html">AED</a>
+								</li>
+								<li>
+									<a href="home-3.html">USD</a>
+								</li>
+								<li>
+									<a href="home-4.html">EUR</a>
+								</li>
+								<li>
+									<a href="home-5.html">GBP</a>
+								</li>
+								<li>
+									<a href="slider-home.html">AUD</a>
+								</li>
+							</ul>
+						</li>
+						<li class="changes_in_li" id="profile">
+							<a href="/home/profile" class="anchor_prfile">
+								<img src="/img/logo_profile.png" alt="" class="profile_logo_img">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>
+	
+
+	<div>
+		@RenderBody()
+	</div>
+     
+
+
+
+	<!-- section for Cart start -->
+
+	<section class=" mb-5 mt-5" id="crtSectionData">
+		<div class="container p-0">
+
+			<div class="row dubai_desert_safari_aria safai_areaa_marginn">
+				<div class="col-lg-9 infrom_border" id="cartdataDitels">
+					<ul class="row d-flex  basic_inform p-4 pb-4 m-0">
+						<li class="col-lg-5 p-0"><span class="items_size"> Items</span></li>
+						<li class="col-lg-1"><span class="items_size">PAXE: </span></li>
+						<li class="col-lg-2"><span class="items_size_new"> Adult </span></li>
+						<li class="col-lg-2"><span class="items_size_new"> Child </span></li>
+						<li class="col-lg-2"><span class="items_size_new"> Infants </span></li>
+
+					</ul>
+
+
+					@* <div class="row px-4 pb-2">
+						<div class="col-lg-6 widht_seett	">
+							<div class="card mb-3 cutoam_card_design">
+								<div class="row g-0">
+									<div class="col-md-2 update_image_design">
+										<img src="/images/topdu03.png"
+											 class="img-fluid rounded-start rounded_imagesss" alt="...">
+									</div>
+									<div class="col-md-10">
+										<div class="card-body py-0">
+											<h5 class="card-title cards_sizee">
+												Exotic Sunrise with Balloon
+												Flights
+											</h5>
+											<div class="d-flex for_center_itemss">
+												<div class=" cards_iconss">
+													<i class="fa-solid fa-star"></i>
+													<i class="fa-solid fa-star"></i>
+													<i class="fa-solid fa-star"></i>
+													<i class="fa-regular fa-star"></i>
+													<i class="fa-regular fa-star"></i>
+												</div>
+												<div class="cards_reviews">
+													<span>223 reviews</span>
+												</div>
+												<div class="cards_reviews">02-Apr-2024</div>
+											</div>
+											<div class="cards_reviews">02-Apr-2024</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-2 ballom_width">
+							<div class="d-flex add_adult"> 
+								<span class="guests-input__value"><span> 0 </span></span> 
+							</div>
+						</div>
+						<div class="col-lg-2 ballom_width">
+							<div class="d-flex add_adult"> 
+								<span class="guests-input__value"><span> 0 </span></span> 
+							</div>
+						</div>
+						<div class="col-lg-2 ballom_width">
+							<div class="d-flex add_adult"> 
+								<span class="guests-input__value"><span> 0 </span></span> 
+							</div>
+						</div>
+					</div>
+
+					<div class="row px-4 pb-2">
+						<div class="col-lg-6 widht_seett	">
+							<div class="card mb-3 cutoam_card_design">
+								<div class="row g-0">
+									<div class="col-md-2 update_image_design">
+										<img src="/images/topdu03.png"
+											 class="img-fluid rounded-start rounded_imagesss" alt="...">
+									</div>
+									<div class="col-md-10">
+										<div class="card-body py-0">
+											<h5 class="card-title cards_sizee">
+												Exotic Sunrise with Balloon
+												Flights
+											</h5>
+											<div class="d-flex for_center_itemss">
+												<div class=" cards_iconss">
+													<i class="fa-solid fa-star"></i>
+													<i class="fa-solid fa-star"></i>
+													<i class="fa-solid fa-star"></i>
+													<i class="fa-regular fa-star"></i>
+													<i class="fa-regular fa-star"></i>
+												</div>
+												<div class="cards_reviews">
+													<span>223 reviews</span>
+												</div>
+												<div class="cards_reviews">02-Apr-2024</div>
+											</div>
+											<div class="cards_reviews">02-Apr-2024</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-2 ballom_width">
+							<div class="d-flex add_adult"> 
+								<span class="guests-input__value"><span> 0 </span></span> 
+							</div>
+						</div>
+						<div class="col-lg-2 ballom_width">
+							<div class="d-flex add_adult"> 
+								<span class="guests-input__value"><span> 0 </span></span> 
+							</div>
+						</div>
+						<div class="col-lg-2 ballom_width">
+							<div class="d-flex add_adult"> 
+								<span class="guests-input__value"><span> 0 </span></span> 
+							</div>
+						</div>
+					</div> *@
+
+				</div>
+
+
+				<div class="col-lg-3 amount_widthh" id="cartdataprice">
+					
+					
+					
+					@* <div class="px-2">
+						<div class="d-flex justify-content-between for_margin_ax">
+							<h4 class="total_amount"> Total</h4>
+							<i class="fa-solid fa-xmark" style="color: #000000;"></i>
+						</div>
+						<h4 class="aed_amount">AED 3215.20 (INR 70,700.36)</h4>
+					</div>
+
+
+					<div class="px-2">
+						<div class="d-flex justify-content-between for_margin_ax">
+							<h4 class="total_amount"> Total</h4>
+							<i class="fa-solid fa-xmark" style="color: #000000;"></i>
+						</div>
+						<h4 class="aed_amount">AED 3215.20 (INR 70,700.36)</h4>
+					</div> *@
+
+				</div>
+
+
+
+
+			</div>
+
+
+
+
+
+
+			<div class="d-flex justify-content-between displaY_setting">
+				<div class="d-flex px-5 pt-2 total_fonts">
+					<h4>Grand Total: &nbsp;&nbsp;</h4>
+					<h4 id="GrandTotle"><strong>3215.20 (INR 70,700.36)</strong> </h3>
+				</div>
+				<div class="d-flex">
+					<div class="">
+						<button type="button"
+								class="Send_btn_enquiry">
+							Send Enquiry
+						</button>
+					</div>
+					<div class="">
+						<button type="button" onclick="bookNow()" class="Checkout_btn_enquiry">Checkout</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+	</section>
+
+
+
+	<!-- ============================ Footer Start ================================== -->
+	<footer class="new_footer" id="footer_area">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+					<div class="footer_heading_area">
+						<h5>Top Destinations </h5>
+					</div>
+					<div class="footer_link_area">
+						<ul>
+							<li><a target="_blank" href="/holidays/georgia">Georgia</a></li>
+							<li><a target="_blank" href="/holidays/armenia">Armenia</a></li>
+							<li><a target="_blank" href="/holidays/azerbaijan">Azerbaijan</a></li>
+							<li><a target="_blank" href="/holidays/singapore">Singapore </a></li>
+							<li><a target="_blank" href="/holidays/malaysia">Malaysia</a></li>
+							<li><a target="_blank" href="/holidays/france/paris">Paris</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+					<div class="footer_heading_area">
+						<h5>Most Demanded Visas </h5>
+					</div>
+					<div class="footer_link_area">
+						<ul>
+							<li><a target="_blank" href="/visas/schengen-visa"> Schengen Visa </a></li>
+							<li>
+								<a target="_blank" href="/visas/united-arab-emirates-visa"> UAE Visa(Dubai) </a>
+							</li>
+							<li><a target="_blank" href="/visas/south-africa-visa"> South Africa Visa </a></li>
+							<li><a target="_blank" href="/visas/india-visa"> India Visa </a></li>
+							<li><a target="_blank" href="/visas/turkey-visa"> Turkey Visa </a></li>
+							<li><a target="_blank" href="/visas/singapore-visa"> Singapore Visa </a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+					<div class="footer_heading_area">
+						<h5> Useful Links </h5>
+					</div>
+					<div class="footer_link_area">
+						<ul>
+							<li>
+								<a target="_blank" href="/home/termsnconditions"> Terms &amp; Conditions </a>
+							</li>
+							<li>
+								<a target="_blank" href="/home/privacypolicy"> Privacy Policy </a>
+							</li>
+							<li>
+								<a target="_blank" href="/home/aboutus"> About Us </a>
+							</li>
+							<li>
+								<a target="_blank" href="/blog"> Blog </a>
+							</li>
+							<li>
+								<a target="_blank" href="/home/faqs"> FAQs </a>
+							</li>
+							<li>
+								<a target="_blank" href="/home/contactus"> Contact Us </a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+					<div class="footer_heading_area">
+						<h5>Connect with us</h5>
+					</div>
+					<div class="footer_link_area">
+						<ul class="">
+							<li>
+								<a>
+									1210-1211, The Regal Tower, Business Bay
+									Dubai, U.A.E.
+								</a><br>
+								<a href="tel:+971 56 507 1346">+971 56 507 1346</a><br>
+								<a href="tel:+971 56 507 1419">+971 56 507 1419</a><br>
+								<a href="mailto:customer.service@nextholidays.com">customer.service@nextholidays.com</a>
+							</li>
+						</ul>
+						<br>
+						<ul class="topbar-list">
+							<li>
+								<a target="_blank" href="https://www.facebook.com/nextholidayscom">
+									<i class="fab fa-facebook"></i>
+								</a>
+								<a target="_blank" href="https://twitter.com/nextholidayscom">
+									<i class="fab fa-twitter"></i>
+								</a>
+								<a target="_blank" href="https://www.instagram.com/nextholidayscom/">
+									<i class="fab fa-instagram"></i>
+								</a>
+								<a target="_blank" href="https://www.linkedin.com/company/nextholidayscom">
+									<i class="fab fa-linkedin"></i>
+								</a>
+								<a target="_blank" href="https://snapchat.com/add/nextholidayscom">
+									<i class="fab fa-snapchat"></i>
+								</a>
+								<a target="_blank" href="https://www.tiktok.com/nextholidayscom">
+									<i class="fab fa-tiktok"></i>
+								</a>
+								<a target="_blank" href="https://www.youtube.com/nextholidayscom">
+									<i class="fab fa-youtube"></i>
+								</a>
+								<a target="_blank" href="https://www.pinterest.com/nextholidayscom/">
+									<i class="fab fa-pinterest"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<footer class="new_footer2" id="footer_area">
+		<div class="container">
+			<div class="col-lg-12 footer_social_icon">
+				© 2024 Next Holidays. All Rights Reserved.
+			</div>
+		</div>
+	</footer>
+
+
+
+
+	<!-- ============================ Footer End ================================== -->
+	<!-- All Jquery -->
+	<!-- ============================================================== -->
+	
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    @* <script src="~/js/dropzone.min.js"></script> *@
+    <script src="~/js/flatpickr.js"></script>
+    <script src="~/js/flickity.pkgd.min.js"></script>
+    <script src="~/js/lightbox.min.js"></script>
+    <script src="~/js/rangeslider.js"></script>
+    <script src="~/js/select2.min.js"></script>
+    @* <script src="~/js/counterup.min.js"></script> *@
+    <script src="~/js/prism.js"></script>
+
+    @* <script src="~/js/addadult.js"></script> *@
+    <script src="~/js/custom.js"></script>
+
+    <script src="~/js/jscommonajaxcall.js"></script>
+    <script src="~/js/allfile.js"></script>
+	<!-- ============================================================== -->
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+
+
+
+
+	<script>
+		document.addEventListener('DOMContentLoaded', (event) => {
+			var logdin = sessionStorage.getItem('UserId');
+			if (logdin !== null) {
+				document.getElementById('profile').style.display = 'block';
+
+			}
+
+			
+
+		});
+
+		
+
+		function Showcart() {
+
+			debugger;
+			var userId = JSON.parse(sessionStorage.getItem('UserId'));
+			if (userId ==null)
+			{
+				
+				alert("your cart is empty...");
+			}
+			else
+			{
+				document.getElementById('crtSectionData').style.display = 'block';
+
+				// Example usage: replace 'tempUserId' and 'userId' with actual values
+				getShortCart('', userId);
+
+				// var targetElement = document.getElementById('crtSectionData');
+				// if (targetElement) {
+				// 	var rect = targetElement.getBoundingClientRect();
+				// 	var targetPosition = rect.top + window.pageYOffset + 200; // Adjusted scroll position
+
+				// 	window.scrollTo({
+				// 		top: targetPosition,
+				// 		behavior: 'smooth'
+				// 	});
+				// }
+			}
+			
+			
+
+			
+
+
+
+		}
+
+
+		function populateCartData(data) {
+			const cartDataDiv = document.getElementById('cartdataDitels');
+			const cartPriceDiv = document.getElementById('cartdataprice');
+			var grandtle = 0;
+			// cartDataDiv.innerHTML = '';
+			// cartPriceDiv.innerHTML = '';
+
+			data.forEach(cart => {
+				const cartId = cart.cartId;
+				const serviceName = cart.serviceName;
+				const travelDate = cart.cartDetails[0].TravelDate;
+				const noOfAdult = cart.cartDetails[0].NoOfAdult;
+				const noOfChild = cart.cartDetails[0].NoOfChild;
+				const noOfInfant = cart.cartDetails[0].NoOfInfant;
+				const price = cart.price;
+
+				grandtle += price;
+				// Create HTML for cart details
+				const cartDetailsHTML = `
+					<div class="row px-4 pb-2" id="cartid${cartId}">
+								<div class="col-lg-6 widht_seett	">
+									<div class="card mb-3 cutoam_card_design">
+										<div class="row g-0">
+											<div class="col-md-2 update_image_design">
+												<img src="/images/topdu03.png"
+													 class="img-fluid rounded-start rounded_imagesss" alt="...">
+											</div>
+											<div class="col-md-10">
+												<div class="card-body py-0">
+													<h5 class="card-title cards_sizee">
+																${serviceName}
+													</h5>
+													<div class="d-flex for_center_itemss">
+														<div class=" cards_iconss">
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-solid fa-star"></i>
+															<i class="fa-regular fa-star"></i>
+															<i class="fa-regular fa-star"></i>
+														</div>
+														<div class="cards_reviews">
+															<span>223 reviews</span>
+														</div>
+																<div class="cards_reviews">${travelDate}</div>
+													</div>
+															<div class="cards_reviews">${travelDate}</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-lg-2 ballom_width">
+									<div class="d-flex add_adult">
+										<span class="guests-input__value"><span> ${noOfAdult} </span></span>
+									</div>
+								</div>
+								<div class="col-lg-2 ballom_width">
+									<div class="d-flex add_adult">
+										<span class="guests-input__value"><span> ${noOfChild} </span></span>
+									</div>
+								</div>
+								<div class="col-lg-2 ballom_width">
+									<div class="d-flex add_adult">
+										<span class="guests-input__value"><span> ${noOfInfant} </span></span>
+									</div>
+								</div>
+					</div>
+				`;
+
+				// Append cart details to the div
+				cartDataDiv.innerHTML += cartDetailsHTML;
+
+				// Create HTML for cart price
+				const cartPriceHTML = `
+							<div class="px-2 mt-4 cartprice" id="cartprice${cartId}">
+						<div class="d-flex justify-content-between for_margin_ax">
+							<h4 class="total_amount"> Total</h4>
+							<i class="fa-solid fa-xmark" id="closebtn" style="color: #000000;" onclick="removeCartItem(${cartId})"></i>
+						</div>
+						<h4 class="aed_amount">AED ${price.toFixed(2)}</h4>
+					</div>
+				`;
+
+				// Append cart price to the div
+				cartPriceDiv.innerHTML += cartPriceHTML;
+			});
+
+
+			document.getElementById('GrandTotle').innerHTML = '';
+			document.getElementById('GrandTotle').innerHTML = '<strong> AED ' + grandtle + '</strong>';
+
+		}
+
+
+		function removeCartItem(cartId) {
+			// Remove the cart item from both details and price sections
+			const cartItem = document.getElementById(`cartid${cartId}`);
+			const cartPrice = document.getElementById(`cartprice${cartId}`);
+
+			if (cartItem) {
+				cartItem.remove();
+			}
+
+			if (cartPrice) {
+				cartPrice.remove();
+			}
+		}
+
+		function getShortCart(tempUserId, userId) {
+			var apiUrl = `https://nextholidaysinadiaapi.nextholidays.co.in/User/GetShortCart?tempuserid=${tempUserId}&userid=${userId}`;
+
+			// Make the GET request using fetch
+			fetch(apiUrl, {
+				method: 'GET',
+				headers: {
+					'Content-Type': 'application/json'
+				}
+			})
+				.then(response => {
+					// Check if the response is OK
+					if (!response.ok) {
+						throw new Error('Network response was not ok');
+					}
+					return response.json(); // Read the response as JSON
+				})
+				.then(data => {
+					// Handle the successful response
+					console.log('Short Cart Data:', data);
+					populateCartData(data);
+				})
+				.catch(error => {
+					// Handle the error response
+					console.error('Error fetching short cart data:', error);
+				});
+		}
+
+	</script>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+
+</body>
+</html>

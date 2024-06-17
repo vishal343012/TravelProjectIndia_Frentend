@@ -1,0 +1,10 @@
+C:\NH\TravelProjectIndia_Frentend\TravelProjectIndia\obj\Release\net8.0\PubTmp\Out\TravelProjectIndia.exe
+C:\NH\TravelProjectIndia_Frentend\TravelProjectIndia\obj\Release\net8.0\PubTmp\Out\appsettings.Development.json
+C:\NH\TravelProjectIndia_Frentend\TravelProjectIndia\obj\Release\net8.0\PubTmp\Out\appsettings.json
+C:\NH\TravelProjectIndia_Frentend\TravelProjectIndia\obj\Release\net8.0\PubTmp\Out\wwwroot\js\allFile.js
+C:\NH\TravelProjectIndia_Frentend\TravelProjectIndia\obj\Release\net8.0\PubTmp\Out\TravelProjectIndia.dll
+C:\NH\TravelProjectIndia_Frentend\TravelProjectIndia\obj\Release\net8.0\PubTmp\Out\TravelProjectIndia.deps.json
+C:\NH\TravelProjectIndia_Frentend\TravelProjectIndia\obj\Release\net8.0\PubTmp\Out\TravelProjectIndia.runtimeconfig.json
+C:\NH\TravelProjectIndia_Frentend\TravelProjectIndia\obj\Release\net8.0\PubTmp\Out\TravelProjectIndia.pdb
+C:\NH\TravelProjectIndia_Frentend\TravelProjectIndia\obj\Release\net8.0\PubTmp\Out\System.Web.Cors.dll
+C:\NH\TravelProjectIndia_Frentend\TravelProjectIndia\obj\Release\net8.0\PubTmp\Out\Newtonsoft.Json.dll

@@ -1,0 +1,797 @@
+﻿@{
+    ViewData["Title"] = "Profile";
+}
+
+<style>
+    img#passwordLogo {
+        width: 20px;
+        margin-left: 10px;
+    }
+
+    }
+</style>
+
+<section>
+    <div class="container p-5 set-cont-width mt-5" ng-app="ProfileDetail" ng-controller="ProfileController">
+        <ul class="nav nav-pills mb-3 prfile_nav_pilss" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active nav_profile_link" id="pills-home-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                        aria-selected="true">
+                    Edit Profile
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link nav_profile_link" id="pills-profile-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                        aria-selected="false">
+                    Change Password
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link nav_profile_link" id="pills-contact-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">
+                    Booking History
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link nav_profile_link" id="pills-wishlist-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-wishlist" type="button" role="tab" aria-controls="pills-contact"
+                        aria-selected="false">
+                    Wishlist
+                </button>
+            </li>
+        </ul>
+
+
+
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                 aria-labelledby="pills-home-tab">
+                <div class="card p-4 min_profile_page profilenew_card">
+                    <div class="row detaailss_roww">
+                        <div class="col-lg-3 details_col mb-3 text-center">
+                            <img src="/img/team-1.jpg" class="logo new_detailss" alt="" />
+                            <div class="detaails_overlay">
+                                Change Photo <i class="fa-solid fa-pencil details_pencil"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-9 pt-3">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="mb-3">
+                                        <label for="First Name" class="form-label formss_label">First Name</label>
+                                        <input type="text" class="form-control form-modalll" id="first-name"
+                                               placeholder="Enter your first name" ng-model="userData.firstName" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="mb-3">
+                                        <label for="Last Name" class="form-label formss_label">Last Name</label>
+                                        <input type="text" class="form-control form-modalll" id="last-name"
+                                               placeholder="Enter your last name" ng-model="userData.lastName" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 ">
+                                <div class="form-group mb-3">
+                                    <label class="form-label formss_label">Email Id (You can't change this)</label>
+                                    <input type="text" class="form-control form-modalll"
+                                           placeholder="Email Id" disabled id="email-id" ng-model="userData.emailId" />
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+
+                                <div class="mb-3">
+                                    <label for="mobile-number" class="form-label formss_label">
+                                        Mobile
+                                        No.
+                                    </label>
+                                    <div class="mobile-input-container">
+                                        <select id="country-code" name="country-code">
+                                            <option value="0" selected>+0</option>
+                                        </select>
+                                        <input type="tel" id="mobile-number" name="mobile-number"
+                                               placeholder="9874563210" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="form-group  mb-3">
+                                    <label class="form-label formss_label"> Gender</label>
+                                    <select class="select form-contro form-modallll" id="gender">
+                                        \
+                                        <option value="" selected>Select Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="form-group mb-3">
+                                    <label class="form-label formss_label"> Select Country</label>
+                                    <select class="select form-control" id="country-name" onchange="fetchCityData(this.value)">
+                                        <option value="0" selected>Select Country</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="form-group  mb-3">
+                                    <label class="form-label formss_label"> City</label>
+                                    <select class="select form-control" id="city-name">
+                                        <option value="0" selected>Select City</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="form-group  mb-3">
+                                    <label class="form-label formss_label">Birth Date</label>
+                                    <input type="date" class="form-control form-modalll"
+                                           placeholder="Birth Date" id="birth-date" />
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6 col-lg-6">
+                                <button type="submit" class="details_but">Save Changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+                <div class="card min_profile_page profilenew_card">
+
+                    <div class="row justify-content-center align-items-center m-auto">
+                        <div class="row g-0">
+                            <!-- Vector Image -->
+                            <div class="col-lg-6 d-flex align-items-center">
+                                <div class="p-3 p-lg-5">
+                                    <img src="/img/vector2.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+
+                            <!-- Information -->
+                            <div class="col-lg-6">
+                                <div class="p-3">
+
+                                    <!-- Form START -->
+                                    <form class="mt-4 text-start">
+                                        <div class="form">
+
+
+                                            <div class="form-group mb-3">
+                                                <label class="form-label formss_label">Old Password</label>
+                                                <div class="position-relative">
+                                                    <input type="password" class="form-control form-profile"
+                                                           id="oldPassword" placeholder="*********" required>
+                                                    <span class="toggle-password1 fa fa-eye-slash"
+                                                          id="oldPasswordEye"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group mb-3">
+                                                <label class="form-label formss_label">New Password</label>
+                                                <div class="position-relative">
+                                                    <input type="password" class="form-control form-profile"
+                                                           id="newPassword1" placeholder="*********" required>
+                                                    <span class="toggle-password1 fa fa-eye-slash"
+                                                          id="newPassword1Eye"></span>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group mb-3">
+                                                <label class="form-label formss_label">Confirm Password</label><img id="passwordLogo" src="" />
+                                                <div class="position-relative">
+                                                    <input type="password" class="form-control form-profile"
+                                                           id="newPassword2" placeholder="*********" required>
+                                                    <span class="toggle-password1 fa fa-eye-slash"
+                                                          id="newPassword2Eye"></span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                <button onclick="ChangePassword()" type="submit" class="btn btn-primary full-width font--bold btn-profile ">Log In </button>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </form>
+                                    <!-- Form END -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+
+
+                <div class="card min_profile_page profilenew_card">
+
+                    <div class="row justify-content-center align-items-center m-auto">
+                        <div class="row g-0">
+                            <!-- Vector Image -->
+                            <div class="col-lg-6 d-flex align-items-center">
+                                <div class="p-3 p-lg-5">
+                                    <img src="/img/vector1.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+
+                            <!-- Information -->
+                            <div class="col-lg-6">
+                                <div class="p-3">
+
+                                    <!-- Form START -->
+                                    <form class="mt-4 text-start">
+                                        <div class="form">
+
+                                            <div class="mb-3">
+                                                <label for="password" class="form-label formss_label">Last Name</label>
+                                                <input type="text" class="form-control form-modalll" id="password1"
+                                                       placeholder="Enter your password" />
+                                            </div>
+
+
+                                            <div class="row">
+                                                <div class="col-lg-6">
+
+                                                    <div class="mb-3">
+                                                        <label for="password" class="form-label formss_label">From Date</label>
+                                                        <input type="date" class="form-control form-modalll" id="password2"
+                                                               placeholder="Enter your password" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6">
+
+                                                    <div class="mb-3">
+                                                        <label for="password" class="form-label formss_label">To Date</label>
+                                                        <input type="date" class="form-control form-modalll" id="password3"
+                                                               placeholder="Enter your password" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="form-group mb-3">
+                                                <button type="submit" class="btn btn-primary full-width font--bold btn-profile ">Search</button>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </form>
+                                    <!-- Form END -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="tab-pane fade" id="pills-wishlist" role="tabpanel" aria-labelledby="pills-wishlist-tab">
+
+                <div class="card min_profile_page profilenew_card px-4 pb-4 top_packages">
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-12 pdding_left mt-4">
+                            <div class="visa_service_card_wrapper">
+
+                                <div class="visa_card_img">
+                                    <img src="/images/top_dubai03.png" alt="img" />
+                                </div>
+                                <div class="visa_card_text">
+                                    <h6 class="plc_title">
+                                        <a href="#"><strong> Exotic Sunrise with Balloon Flights </strong></a>
+                                    </h6>
+                                    <ul class="hotel_inlcuded hotel_newww">
+                                        <li>
+                                            <span>
+                                                <i class="fa fa-clock"></i> Dubai
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fas fa-cheese"></i>  Hotels Included
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fas fa-bed"></i>  Transfers Included
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fas fa-car"></i> 90 - 120 mins (approx)
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="row p-3 pt-0">
+                                        <div class="trsms-foots mt-2 col-md-12">
+                                            <div class="flts-flex d-flex align-items-end justify-content-between">
+                                                <div class="flts-flex-strat">
+                                                    <span>  Starts from </span>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="text-dark fw-bold price_total">AED 3099.00</div>
+                                                        <div class="text-muted-2 fw-medium ms-2">Per person</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="row Pck_pri p-3 pt-0 top_ac_btn">
+                                        <div class="col-lg-6"><button type="button" class="btn btn_colorrr fw-medium px-4 mt-0" fdprocessedid="shj79">Remove</button></div>
+                                        <div class="col-lg-6 for_new_padding">
+                                            <button type="button" class="btn btn-light-primary fw-medium px-4 send_enq_btn mt-0" fdprocessedid="shj79">Move To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-12 pdding_left mt-4">
+                            <div class="visa_service_card_wrapper">
+
+                                <div class="visa_card_img">
+                                    <img src="/images/top_dubai03.png" alt="img" />
+                                </div>
+                                <div class="visa_card_text">
+                                    <h6 class="plc_title">
+                                        <a href="#"><strong> Exotic Sunrise with Balloon Flights </strong></a>
+                                    </h6>
+                                    <ul class="hotel_inlcuded hotel_newww">
+                                        <li>
+                                            <span>
+                                                <i class="fa fa-clock"></i> Dubai
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fas fa-cheese"></i>  Hotels Included
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fas fa-bed"></i>  Transfers Included
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fas fa-car"></i> 90 - 120 mins (approx)
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="row p-3 pt-0">
+                                        <div class="trsms-foots mt-2 col-md-12">
+                                            <div class="flts-flex d-flex align-items-end justify-content-between">
+                                                <div class="flts-flex-strat">
+                                                    <span>  Starts from </span>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="text-dark fw-bold price_total">AED 3099.00</div>
+                                                        <div class="text-muted-2 fw-medium ms-2">Per person</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="row Pck_pri p-3 pt-0 top_ac_btn">
+                                        <div class="col-lg-6"><button type="button" class="btn btn_colorrr fw-medium px-4 mt-0" fdprocessedid="shj79">Remove</button></div>
+                                        <div class="col-lg-6 for_new_padding">
+                                            <button type="button" class="btn btn-light-primary fw-medium px-4 send_enq_btn mt-0" fdprocessedid="shj79">Move To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-12 pdding_left mt-4">
+                            <div class="visa_service_card_wrapper">
+
+                                <div class="visa_card_img">
+                                    <img src="/images/top_dubai03.png" alt="img" />
+                                </div>
+                                <div class="visa_card_text">
+                                    <h6 class="plc_title">
+                                        <a href="#"><strong> Exotic Sunrise with Balloon Flights </strong></a>
+                                    </h6>
+                                    <ul class="hotel_inlcuded hotel_newww">
+                                        <li>
+                                            <span>
+                                                <i class="fa fa-clock"></i> Dubai
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fas fa-cheese"></i>  Hotels Included
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fas fa-bed"></i>  Transfers Included
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fas fa-car"></i> 90 - 120 mins (approx)
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="row p-3 pt-0">
+                                        <div class="trsms-foots mt-2 col-md-12">
+                                            <div class="flts-flex d-flex align-items-end justify-content-between">
+                                                <div class="flts-flex-strat">
+                                                    <span>  Starts from </span>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="text-dark fw-bold price_total">AED 3099.00</div>
+                                                        <div class="text-muted-2 fw-medium ms-2">Per person</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="row Pck_pri p-3 pt-0 top_ac_btn">
+                                        <div class="col-lg-6"><button type="button" class="btn btn_colorrr fw-medium px-4 mt-0" fdprocessedid="shj79">Remove</button></div>
+                                        <div class="col-lg-6 for_new_padding">
+                                            <button type="button" class="btn btn-light-primary fw-medium px-4 send_enq_btn mt-0" fdprocessedid="shj79">Move To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-12 col-12 pdding_left mt-4">
+                            <div class="visa_service_card_wrapper">
+
+                                <div class="visa_card_img">
+                                    <img src="/images/top_dubai03.png" alt="img" />
+                                </div>
+                                <div class="visa_card_text">
+                                    <h6 class="plc_title">
+                                        <a href="#"><strong> Exotic Sunrise with Balloon Flights </strong></a>
+                                    </h6>
+                                    <ul class="hotel_inlcuded hotel_newww">
+                                        <li>
+                                            <span>
+                                                <i class="fa fa-clock"></i> Dubai
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fas fa-cheese"></i>  Hotels Included
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fas fa-bed"></i>  Transfers Included
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                <i class="fas fa-car"></i> 90 - 120 mins (approx)
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="row p-3 pt-0">
+                                        <div class="trsms-foots mt-2 col-md-12">
+                                            <div class="flts-flex d-flex align-items-end justify-content-between">
+                                                <div class="flts-flex-strat">
+                                                    <span>  Starts from </span>
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="text-dark fw-bold price_total">AED 3099.00</div>
+                                                        <div class="text-muted-2 fw-medium ms-2">Per person</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="row Pck_pri p-3 pt-0 top_ac_btn">
+                                        <div class="col-lg-6"><button type="button" class="btn btn_colorrr fw-medium px-4 mt-0" fdprocessedid="shj79">Remove</button></div>
+                                        <div class="col-lg-6 for_new_padding">
+                                            <button type="button" class="btn btn-light-primary fw-medium px-4 send_enq_btn mt-0" fdprocessedid="shj79">Move To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        var app = angular.module('ProfileDetail', []);
+
+        app.controller('ProfileController', ['$scope', '$http', function ($scope, $http) {
+
+            $scope.userData = {};
+            $scope.userID = JSON.parse(sessionStorage.getItem('UserId'));
+            $scope.userID += "";
+
+
+
+            // Function to fetch user data
+            $scope.getUserData = function () {
+                // Request body
+                var requestBody = {
+                    "EmailId": $scope.userID
+                };
+
+                // API endpoint
+                var apiUrl = 'https://nextholidaysinadiaapi.nextholidays.co.in/User/GetUserData';
+
+                // Make POST request to fetch user data
+                $http.post(apiUrl, requestBody)
+                    .then(function (response) {
+                        // On success, store user data in scope variable
+                        $scope.userData = response.data;
+                        console.log('user data',$scope.userData);
+                        // Ensure DOM updates are applied
+                        fetchCountryList();
+                        setTimeout(function () {
+                            document.getElementById('country-name').value = $scope.userData.countryId;
+                            document.getElementById('country-code').value = $scope.userData.countryCode;
+                            document.getElementById('gender').value = $scope.userData.gender;
+                            document.getElementById('country-name').value = $scope.userData.countryId;
+                            document.getElementById('city-name').value = $scope.userData.cityId;
+                            if ($scope.userData.dob != null) {
+                                document.getElementById('birth-date').value = $scope.userData.dob;
+                                console.log($scope.userData.dob);
+                            }
+                            
+                            
+
+                        }, 5000);
+                    })
+                    .catch(function (error) {
+                        console.error('Error fetching user data:', error);
+                    });
+            };
+
+            
+            if ($scope.userID !== null) {
+                $scope.getUserData();
+            }
+            else {
+                window.location.href = "/";
+            }
+        }]);
+    </script>
+
+
+    @* Edit profile *@
+
+    <script>
+        const firstName = document.getElementById('first-name');
+        const firstNamev = firstName.value;
+
+        const LastName = document.getElementById('last-name');
+        const LastNamev = LastName.value;
+
+        const email = document.getElementById('email-id');
+        const emailv = email.value;
+
+        const countryCode = document.getElementById('country-code');
+        const countryCodev = countryCode.value;
+
+        const mobileNumber = document.getElementById('mobile-number');
+        const mobileNumberv = mobileNumber.value;
+
+        const gender = document.getElementById('gender').value;
+        const genderv = gender.value;
+
+        const countryName = document.getElementById('country-name');
+        const countryNamev = countryName.value;
+
+        const cityName = document.getElementById('city-name');
+        const cityNamev = cityName.value;
+
+        const birthDate = document.getElementById('birth-date');
+        const birthDatev = birthDate.value;
+
+        document.addEventListener('DOMContentLoaded', function () {
+            fetchCountryList();
+
+        });
+
+
+
+        function fetchCityData(countryId) {
+            const apiUrl = `https://nextholidaysinadiaapi.nextholidays.co.in/User/GetCityList?CountryId=${countryId}`;
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    const selectElement = document.getElementById('city-name');
+
+                    selectElement.innerHTML = '<option selected disabled>Select a city</option>';
+
+                    data.forEach(city => {
+                        const option = document.createElement('option');
+                        option.value = city.ID;
+                        option.textContent = city.Name;
+                        selectElement.appendChild(option);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching city data:', error);
+                });
+        }
+
+
+        function fetchCountryList() {
+            const url = 'https://nextholidaysinadiaapi.nextholidays.co.in/User/GetCountryList';
+
+            fetch(url)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok ' + response.statusText);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+
+                    const selectElement = document.getElementById('country-name');
+                    const countryCode = document.getElementById('country-code');
+
+                    data.forEach(country => {
+                        const option = document.createElement('option');
+                        option.value = country.ID;
+                        option.textContent = country.Name;
+                        selectElement.appendChild(option);
+
+                        const Codeoption = document.createElement('option');
+                        Codeoption.value = country.MobileCode;
+                        Codeoption.textContent = '+' + country.MobileCode;
+                        countryCode.appendChild(Codeoption);
+
+                    });
+                })
+                .catch(error => {
+                    console.error('There was a problem with the fetch operation:', error);
+                });
+        }
+
+
+
+
+    </script>
+
+
+
+    @* change password *@
+    <script>
+
+        function togglePasswordVisibility(inputId, iconId) {
+            const passwordInput = document.getElementById(inputId);
+            const passwordIcon = document.getElementById(iconId);
+
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                passwordIcon.className = 'toggle-password1 fa fa-eye';
+            }
+            else {
+                passwordInput.type = 'password';
+                passwordIcon.className = 'toggle-password1 fa fa-eye-slash';
+
+            }
+        }
+
+        var flag = false;
+
+        function checkPasswordsMatch() {
+            const newPassword1 = document.getElementById('newPassword1');
+            const newPassword2 = document.getElementById('newPassword2');
+
+
+            if (newPassword1.value !== "" && newPassword2.value !== "") {
+                if (newPassword1.value === newPassword2.value) {
+                    const imageElement = document.getElementById('passwordLogo');
+                    imageElement.src = '/img/currectpass.png';
+                    flag = true;
+                }
+                else {
+                    const imageElement = document.getElementById('passwordLogo');
+                    imageElement.src = '/img/wrongpass.png';
+                    flag = false;
+                }
+            }
+            else if (newPassword2.value !== "") {
+                const imageElement = document.getElementById('passwordLogo');
+                imageElement.src = '/img/wrongpass.png';
+                flag = false;
+            }
+            else {
+                const imageElement = document.getElementById('passwordLogo');
+                imageElement.src = '';
+                flag = false;
+            }
+        }
+
+        function ChangePassword() {
+            if (flag) {
+
+                const newPassword = document.getElementById('oldPassword').value;
+                const newPassword2 = document.getElementById('newPassword2').value;
+
+                if (newPassword != newPassword2) 
+                {
+                    alert("Password changed..")
+                }
+                else {
+                    alert("Old Password and new password not be same..")
+                }
+            }
+            else {
+                alert("Both new password must be same.");
+            }
+        }
+        // Add event listeners to all eye icons
+        document.getElementById('oldPasswordEye').addEventListener('click', function () {
+            togglePasswordVisibility('oldPassword', 'oldPasswordEye');
+        });
+
+        document.getElementById('newPassword1Eye').addEventListener('click', function () {
+            togglePasswordVisibility('newPassword1', 'newPassword1Eye');
+        });
+
+        document.getElementById('newPassword2Eye').addEventListener('click', function () {
+            togglePasswordVisibility('newPassword2', 'newPassword2Eye');
+        });
+
+        const password1 = document.getElementById('newPassword1');
+        const password2 = document.getElementById('newPassword2');
+        password1.addEventListener('input', checkPasswordsMatch);
+        password1.addEventListener('change', checkPasswordsMatch);
+        password2.addEventListener('input', checkPasswordsMatch);
+        password2.addEventListener('change', checkPasswordsMatch);
+
+
+
+
+
+    </script>
+}

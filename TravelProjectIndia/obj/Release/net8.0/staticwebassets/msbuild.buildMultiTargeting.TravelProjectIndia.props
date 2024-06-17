@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TravelProjectIndia.props" />
+</Project>

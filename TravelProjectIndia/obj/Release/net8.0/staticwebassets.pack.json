@@ -1,0 +1,1437 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\TravelProjectIndia.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TravelProjectIndia.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\css\\animation.css",
+      "PackagePath": "staticwebassets\\css\\animation.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\css\\bootstrap-icons.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap-icons.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\css\\dropzone.min.css",
+      "PackagePath": "staticwebassets\\css\\dropzone.min.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\css\\flatpickr.min.css",
+      "PackagePath": "staticwebassets\\css\\flatpickr.min.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\css\\flickity.min.css",
+      "PackagePath": "staticwebassets\\css\\flickity.min.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\css\\fontawesome.css",
+      "PackagePath": "staticwebassets\\css\\fontawesome.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\css\\fonts\\bootstrap-iconsafdf-2.html",
+      "PackagePath": "staticwebassets\\css\\fonts\\bootstrap-iconsafdf-2.html"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\css\\fonts\\bootstrap-iconsafdf.html",
+      "PackagePath": "staticwebassets\\css\\fonts\\bootstrap-iconsafdf.html"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\css\\lightbox.min.css",
+      "PackagePath": "staticwebassets\\css\\lightbox.min.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\css\\magnifypopup.css",
+      "PackagePath": "staticwebassets\\css\\magnifypopup.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\css\\prism.css",
+      "PackagePath": "staticwebassets\\css\\prism.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\css\\rangeSlider.min.css",
+      "PackagePath": "staticwebassets\\css\\rangeSlider.min.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\css\\select2.min.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\Demanded04.png",
+      "PackagePath": "staticwebassets\\images\\Demanded04.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\Frame 40379.png",
+      "PackagePath": "staticwebassets\\images\\Frame 40379.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\Frame 40380.png",
+      "PackagePath": "staticwebassets\\images\\Frame 40380.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\Frame 40381.png",
+      "PackagePath": "staticwebassets\\images\\Frame 40381.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\Frame 40382.png",
+      "PackagePath": "staticwebassets\\images\\Frame 40382.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\Frame 40383.png",
+      "PackagePath": "staticwebassets\\images\\Frame 40383.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\Frame 40384.png",
+      "PackagePath": "staticwebassets\\images\\Frame 40384.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\Frame 40385.png",
+      "PackagePath": "staticwebassets\\images\\Frame 40385.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\Frame 40399.png",
+      "PackagePath": "staticwebassets\\images\\Frame 40399.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\Frame 40406.png",
+      "PackagePath": "staticwebassets\\images\\Frame 40406.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\Frame 40407.png",
+      "PackagePath": "staticwebassets\\images\\Frame 40407.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\Frame 40409.png",
+      "PackagePath": "staticwebassets\\images\\Frame 40409.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\Frame 40555.png",
+      "PackagePath": "staticwebassets\\images\\Frame 40555.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\Frame 40556.png",
+      "PackagePath": "staticwebassets\\images\\Frame 40556.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\Frame 40557.png",
+      "PackagePath": "staticwebassets\\images\\Frame 40557.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\NH Eid logo-01.jpg",
+      "PackagePath": "staticwebassets\\images\\NH Eid logo-01.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\NH eid logo-01.png",
+      "PackagePath": "staticwebassets\\images\\NH eid logo-01.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\OTP.png",
+      "PackagePath": "staticwebassets\\images\\OTP.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\abuhotel01.png",
+      "PackagePath": "staticwebassets\\images\\abuhotel01.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\abuhotel02.png",
+      "PackagePath": "staticwebassets\\images\\abuhotel02.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\abuhotel03.png",
+      "PackagePath": "staticwebassets\\images\\abuhotel03.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\abuhotel04.png",
+      "PackagePath": "staticwebassets\\images\\abuhotel04.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\acro01.png",
+      "PackagePath": "staticwebassets\\images\\acro01.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\acro02.png",
+      "PackagePath": "staticwebassets\\images\\acro02.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\acro03.png",
+      "PackagePath": "staticwebassets\\images\\acro03.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\acro04.png",
+      "PackagePath": "staticwebassets\\images\\acro04.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\bg_new.png",
+      "PackagePath": "staticwebassets\\images\\bg_new.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\client_img.png",
+      "PackagePath": "staticwebassets\\images\\client_img.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\demanded01.png",
+      "PackagePath": "staticwebassets\\images\\demanded01.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\demanded02.png",
+      "PackagePath": "staticwebassets\\images\\demanded02.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\demanded03.png",
+      "PackagePath": "staticwebassets\\images\\demanded03.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\desert_images.png",
+      "PackagePath": "staticwebassets\\images\\desert_images.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\desert_safari01.png",
+      "PackagePath": "staticwebassets\\images\\desert_safari01.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\dubai_group_bg.png",
+      "PackagePath": "staticwebassets\\images\\dubai_group_bg.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\dubai_slide.png",
+      "PackagePath": "staticwebassets\\images\\dubai_slide.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\exoti_tour.png",
+      "PackagePath": "staticwebassets\\images\\exoti_tour.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\for_you_banner.png",
+      "PackagePath": "staticwebassets\\images\\for_you_banner.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\got_query.png",
+      "PackagePath": "staticwebassets\\images\\got_query.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\helicopter_ride03.png",
+      "PackagePath": "staticwebassets\\images\\helicopter_ride03.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\helicopter_tour.png",
+      "PackagePath": "staticwebassets\\images\\helicopter_tour.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\holiday_slider_min.png",
+      "PackagePath": "staticwebassets\\images\\holiday_slider_min.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\holody_theme_bg.png",
+      "PackagePath": "staticwebassets\\images\\holody_theme_bg.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\hot_baloon02.png",
+      "PackagePath": "staticwebassets\\images\\hot_baloon02.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\hotel02.png",
+      "PackagePath": "staticwebassets\\images\\hotel02.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\hotel03.png",
+      "PackagePath": "staticwebassets\\images\\hotel03.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\hotel04.png",
+      "PackagePath": "staticwebassets\\images\\hotel04.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\hotel_01.png",
+      "PackagePath": "staticwebassets\\images\\hotel_01.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\im1.png",
+      "PackagePath": "staticwebassets\\images\\im1.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\im2.png",
+      "PackagePath": "staticwebassets\\images\\im2.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\im3.png",
+      "PackagePath": "staticwebassets\\images\\im3.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\im4.png",
+      "PackagePath": "staticwebassets\\images\\im4.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\loading.gif",
+      "PackagePath": "staticwebassets\\images\\loading.gif"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\luxuryh01.png",
+      "PackagePath": "staticwebassets\\images\\luxuryh01.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\luxuryh02.png",
+      "PackagePath": "staticwebassets\\images\\luxuryh02.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\luxuryh03.png",
+      "PackagePath": "staticwebassets\\images\\luxuryh03.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\luxuryh04.png",
+      "PackagePath": "staticwebassets\\images\\luxuryh04.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\marina_tour.png",
+      "PackagePath": "staticwebassets\\images\\marina_tour.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\offer_images.png",
+      "PackagePath": "staticwebassets\\images\\offer_images.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\offer_img01.png",
+      "PackagePath": "staticwebassets\\images\\offer_img01.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\part01.png",
+      "PackagePath": "staticwebassets\\images\\part01.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\part02.png",
+      "PackagePath": "staticwebassets\\images\\part02.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\part03.png",
+      "PackagePath": "staticwebassets\\images\\part03.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\part04.png",
+      "PackagePath": "staticwebassets\\images\\part04.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\part05.png",
+      "PackagePath": "staticwebassets\\images\\part05.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\part06.png",
+      "PackagePath": "staticwebassets\\images\\part06.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\populard01.png",
+      "PackagePath": "staticwebassets\\images\\populard01.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\populard02.png",
+      "PackagePath": "staticwebassets\\images\\populard02.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\populard03.png",
+      "PackagePath": "staticwebassets\\images\\populard03.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\populard04.png",
+      "PackagePath": "staticwebassets\\images\\populard04.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\realted01.png",
+      "PackagePath": "staticwebassets\\images\\realted01.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\realted02.png",
+      "PackagePath": "staticwebassets\\images\\realted02.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\realted03.png",
+      "PackagePath": "staticwebassets\\images\\realted03.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\realted04.png",
+      "PackagePath": "staticwebassets\\images\\realted04.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\review_img.png",
+      "PackagePath": "staticwebassets\\images\\review_img.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\top-1.png",
+      "PackagePath": "staticwebassets\\images\\top-1.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\top-2.png",
+      "PackagePath": "staticwebassets\\images\\top-2.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\top-3.png",
+      "PackagePath": "staticwebassets\\images\\top-3.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\top-4.png",
+      "PackagePath": "staticwebassets\\images\\top-4.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\top-5.png",
+      "PackagePath": "staticwebassets\\images\\top-5.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\top-6.png",
+      "PackagePath": "staticwebassets\\images\\top-6.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\top-7.png",
+      "PackagePath": "staticwebassets\\images\\top-7.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\top-8.png",
+      "PackagePath": "staticwebassets\\images\\top-8.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\top_dubai01.png",
+      "PackagePath": "staticwebassets\\images\\top_dubai01.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\top_dubai02.png",
+      "PackagePath": "staticwebassets\\images\\top_dubai02.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\top_dubai03.png",
+      "PackagePath": "staticwebassets\\images\\top_dubai03.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\top_reco01.png",
+      "PackagePath": "staticwebassets\\images\\top_reco01.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\top_reco02.png",
+      "PackagePath": "staticwebassets\\images\\top_reco02.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\top_reco03.png",
+      "PackagePath": "staticwebassets\\images\\top_reco03.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\topdu01.png",
+      "PackagePath": "staticwebassets\\images\\topdu01.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\topdu02.png",
+      "PackagePath": "staticwebassets\\images\\topdu02.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\topdu03.png",
+      "PackagePath": "staticwebassets\\images\\topdu03.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\topnh01.png",
+      "PackagePath": "staticwebassets\\images\\topnh01.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\topnh02.png",
+      "PackagePath": "staticwebassets\\images\\topnh02.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\topnh03.png",
+      "PackagePath": "staticwebassets\\images\\topnh03.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\topnh04.png",
+      "PackagePath": "staticwebassets\\images\\topnh04.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\tour_min01.png",
+      "PackagePath": "staticwebassets\\images\\tour_min01.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\tp_actdu01.png",
+      "PackagePath": "staticwebassets\\images\\tp_actdu01.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\tp_actdu02.png",
+      "PackagePath": "staticwebassets\\images\\tp_actdu02.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\tp_actdu03.png",
+      "PackagePath": "staticwebassets\\images\\tp_actdu03.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\trading_bg.png",
+      "PackagePath": "staticwebassets\\images\\trading_bg.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\tradingright_bg.png",
+      "PackagePath": "staticwebassets\\images\\tradingright_bg.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\trip-1.png",
+      "PackagePath": "staticwebassets\\images\\trip-1.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\trip-2.png",
+      "PackagePath": "staticwebassets\\images\\trip-2.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\trip-3.png",
+      "PackagePath": "staticwebassets\\images\\trip-3.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\visa_img001.png",
+      "PackagePath": "staticwebassets\\images\\visa_img001.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\wordTour01.png",
+      "PackagePath": "staticwebassets\\images\\wordTour01.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\wordTour02.png",
+      "PackagePath": "staticwebassets\\images\\wordTour02.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\wordTour03.png",
+      "PackagePath": "staticwebassets\\images\\wordTour03.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\images\\wordTour04.png",
+      "PackagePath": "staticwebassets\\images\\wordTour04.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\404.png",
+      "PackagePath": "staticwebassets\\img\\404.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\CurrectPAss.png",
+      "PackagePath": "staticwebassets\\img\\CurrectPAss.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\air-1.png",
+      "PackagePath": "staticwebassets\\img\\air-1.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\air-2.png",
+      "PackagePath": "staticwebassets\\img\\air-2.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\air-3.png",
+      "PackagePath": "staticwebassets\\img\\air-3.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\air-4.png",
+      "PackagePath": "staticwebassets\\img\\air-4.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\air-5.png",
+      "PackagePath": "staticwebassets\\img\\air-5.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\app-link.png",
+      "PackagePath": "staticwebassets\\img\\app-link.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\attr\\attr-1.jpg",
+      "PackagePath": "staticwebassets\\img\\attr\\attr-1.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\attr\\attr-10.jpg",
+      "PackagePath": "staticwebassets\\img\\attr\\attr-10.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\attr\\attr-2.jpg",
+      "PackagePath": "staticwebassets\\img\\attr\\attr-2.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\attr\\attr-3.jpg",
+      "PackagePath": "staticwebassets\\img\\attr\\attr-3.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\attr\\attr-4.jpg",
+      "PackagePath": "staticwebassets\\img\\attr\\attr-4.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\attr\\attr-5.jpg",
+      "PackagePath": "staticwebassets\\img\\attr\\attr-5.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\attr\\attr-6.jpg",
+      "PackagePath": "staticwebassets\\img\\attr\\attr-6.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\attr\\attr-7.jpg",
+      "PackagePath": "staticwebassets\\img\\attr\\attr-7.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\attr\\attr-8.jpg",
+      "PackagePath": "staticwebassets\\img\\attr\\attr-8.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\attr\\attr-9.jpg",
+      "PackagePath": "staticwebassets\\img\\attr\\attr-9.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\auth.svg",
+      "PackagePath": "staticwebassets\\img\\auth.svg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\banner-2.jpg",
+      "PackagePath": "staticwebassets\\img\\banner-2.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\banner-3.jpg",
+      "PackagePath": "staticwebassets\\img\\banner-3.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\banner-4.jpg",
+      "PackagePath": "staticwebassets\\img\\banner-4.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\banner-5.jpg",
+      "PackagePath": "staticwebassets\\img\\banner-5.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\banner-6.jpg",
+      "PackagePath": "staticwebassets\\img\\banner-6.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\banner-7.jpg",
+      "PackagePath": "staticwebassets\\img\\banner-7.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\banner-8.jpg",
+      "PackagePath": "staticwebassets\\img\\banner-8.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\banner.jpg",
+      "PackagePath": "staticwebassets\\img\\banner.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\bg-3.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-3.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\bg-title.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-title.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\bg.jpg",
+      "PackagePath": "staticwebassets\\img\\bg.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\bg2.png",
+      "PackagePath": "staticwebassets\\img\\bg2.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\img\\blog-1.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\img\\blog-2.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\img\\blog-3.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\brand\\logo-1.png",
+      "PackagePath": "staticwebassets\\img\\brand\\logo-1.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\brand\\logo-15.png",
+      "PackagePath": "staticwebassets\\img\\brand\\logo-15.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\brand\\logo-16.png",
+      "PackagePath": "staticwebassets\\img\\brand\\logo-16.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\brand\\logo-3.png",
+      "PackagePath": "staticwebassets\\img\\brand\\logo-3.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\brand\\logo-4.png",
+      "PackagePath": "staticwebassets\\img\\brand\\logo-4.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\brand\\logo-8.png",
+      "PackagePath": "staticwebassets\\img\\brand\\logo-8.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\car-bg.jpg",
+      "PackagePath": "staticwebassets\\img\\car-bg.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\car.jpg",
+      "PackagePath": "staticwebassets\\img\\car.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\card.png",
+      "PackagePath": "staticwebassets\\img\\card.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\city\\c-1.png",
+      "PackagePath": "staticwebassets\\img\\city\\c-1.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\city\\c-2.png",
+      "PackagePath": "staticwebassets\\img\\city\\c-2.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\city\\c-3.png",
+      "PackagePath": "staticwebassets\\img\\city\\c-3.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\city\\c-4.png",
+      "PackagePath": "staticwebassets\\img\\city\\c-4.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\city\\c-5.png",
+      "PackagePath": "staticwebassets\\img\\city\\c-5.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\city\\c-6.png",
+      "PackagePath": "staticwebassets\\img\\city\\c-6.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\city\\c-7.png",
+      "PackagePath": "staticwebassets\\img\\city\\c-7.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\city\\c-8.png",
+      "PackagePath": "staticwebassets\\img\\city\\c-8.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\city\\ct-1.png",
+      "PackagePath": "staticwebassets\\img\\city\\ct-1.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\city\\ct-10.png",
+      "PackagePath": "staticwebassets\\img\\city\\ct-10.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\city\\ct-12.png",
+      "PackagePath": "staticwebassets\\img\\city\\ct-12.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\city\\ct-2.png",
+      "PackagePath": "staticwebassets\\img\\city\\ct-2.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\city\\ct-3.png",
+      "PackagePath": "staticwebassets\\img\\city\\ct-3.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\city\\ct-4.png",
+      "PackagePath": "staticwebassets\\img\\city\\ct-4.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\city\\ct-5.png",
+      "PackagePath": "staticwebassets\\img\\city\\ct-5.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\city\\ct-6.png",
+      "PackagePath": "staticwebassets\\img\\city\\ct-6.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\city\\ct-7.png",
+      "PackagePath": "staticwebassets\\img\\city\\ct-7.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\city\\ct-8.png",
+      "PackagePath": "staticwebassets\\img\\city\\ct-8.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\city\\ct-9.png",
+      "PackagePath": "staticwebassets\\img\\city\\ct-9.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\destination\\tr-1.jpg",
+      "PackagePath": "staticwebassets\\img\\destination\\tr-1.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\destination\\tr-10.jpg",
+      "PackagePath": "staticwebassets\\img\\destination\\tr-10.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\destination\\tr-2.jpg",
+      "PackagePath": "staticwebassets\\img\\destination\\tr-2.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\destination\\tr-3.jpg",
+      "PackagePath": "staticwebassets\\img\\destination\\tr-3.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\destination\\tr-4.jpg",
+      "PackagePath": "staticwebassets\\img\\destination\\tr-4.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\destination\\tr-5.jpg",
+      "PackagePath": "staticwebassets\\img\\destination\\tr-5.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\destination\\tr-6.jpg",
+      "PackagePath": "staticwebassets\\img\\destination\\tr-6.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\destination\\tr-7.jpg",
+      "PackagePath": "staticwebassets\\img\\destination\\tr-7.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\destination\\tr-9.jpg",
+      "PackagePath": "staticwebassets\\img\\destination\\tr-9.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\discount-1.jpg",
+      "PackagePath": "staticwebassets\\img\\discount-1.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\discount-2.jpg",
+      "PackagePath": "staticwebassets\\img\\discount-2.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\flag\\belgium.png",
+      "PackagePath": "staticwebassets\\img\\flag\\belgium.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\flag\\brazil.png",
+      "PackagePath": "staticwebassets\\img\\flag\\brazil.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\flag\\china.png",
+      "PackagePath": "staticwebassets\\img\\flag\\china.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\flag\\european.png",
+      "PackagePath": "staticwebassets\\img\\flag\\european.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\flag\\flag.png",
+      "PackagePath": "staticwebassets\\img\\flag\\flag.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\flag\\france.png",
+      "PackagePath": "staticwebassets\\img\\flag\\france.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\flag\\germany.png",
+      "PackagePath": "staticwebassets\\img\\flag\\germany.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\flag\\italy.png",
+      "PackagePath": "staticwebassets\\img\\flag\\italy.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\flag\\japan.png",
+      "PackagePath": "staticwebassets\\img\\flag\\japan.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\flag\\portugal.png",
+      "PackagePath": "staticwebassets\\img\\flag\\portugal.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\flag\\spain.png",
+      "PackagePath": "staticwebassets\\img\\flag\\spain.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\flag\\turkey.png",
+      "PackagePath": "staticwebassets\\img\\flag\\turkey.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\flag\\united-kingdom.png",
+      "PackagePath": "staticwebassets\\img\\flag\\united-kingdom.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\flag\\united-states.png",
+      "PackagePath": "staticwebassets\\img\\flag\\united-states.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\flag\\vietnam.png",
+      "PackagePath": "staticwebassets\\img\\flag\\vietnam.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\flt-1.png",
+      "PackagePath": "staticwebassets\\img\\flt-1.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\flt-2.png",
+      "PackagePath": "staticwebassets\\img\\flt-2.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\flt-3.png",
+      "PackagePath": "staticwebassets\\img\\flt-3.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\flt-4.png",
+      "PackagePath": "staticwebassets\\img\\flt-4.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\goibibo.png",
+      "PackagePath": "staticwebassets\\img\\goibibo.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\hotel\\hotel-1.jpg",
+      "PackagePath": "staticwebassets\\img\\hotel\\hotel-1.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\hotel\\hotel-10.jpg",
+      "PackagePath": "staticwebassets\\img\\hotel\\hotel-10.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\hotel\\hotel-2.jpg",
+      "PackagePath": "staticwebassets\\img\\hotel\\hotel-2.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\hotel\\hotel-3.jpg",
+      "PackagePath": "staticwebassets\\img\\hotel\\hotel-3.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\hotel\\hotel-4.jpg",
+      "PackagePath": "staticwebassets\\img\\hotel\\hotel-4.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\hotel\\hotel-5.jpg",
+      "PackagePath": "staticwebassets\\img\\hotel\\hotel-5.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\hotel\\hotel-6.jpg",
+      "PackagePath": "staticwebassets\\img\\hotel\\hotel-6.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\hotel\\hotel-7.jpg",
+      "PackagePath": "staticwebassets\\img\\hotel\\hotel-7.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\hotel\\hotel-8.jpg",
+      "PackagePath": "staticwebassets\\img\\hotel\\hotel-8.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\hotel\\hotel-9.jpg",
+      "PackagePath": "staticwebassets\\img\\hotel\\hotel-9.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\img-1.png",
+      "PackagePath": "staticwebassets\\img\\img-1.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\img-2.png",
+      "PackagePath": "staticwebassets\\img\\img-2.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\img-3.png",
+      "PackagePath": "staticwebassets\\img\\img-3.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\joinus.png",
+      "PackagePath": "staticwebassets\\img\\joinus.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\login.svg",
+      "PackagePath": "staticwebassets\\img\\login.svg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\logo-2.png",
+      "PackagePath": "staticwebassets\\img\\logo-2.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\logo-icon.png",
+      "PackagePath": "staticwebassets\\img\\logo-icon.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\logo-light.png",
+      "PackagePath": "staticwebassets\\img\\logo-light.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\logo_profile.png",
+      "PackagePath": "staticwebassets\\img\\logo_profile.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\mask-bg.png",
+      "PackagePath": "staticwebassets\\img\\mask-bg.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\mytrip.png",
+      "PackagePath": "staticwebassets\\img\\mytrip.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\payment.png",
+      "PackagePath": "staticwebassets\\img\\payment.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\property\\img-1.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\property\\img-2.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\property\\img-3.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\property\\img-4.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\property\\img-5.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-5.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\property\\img-6.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-6.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\property\\img-7.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-7.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\property\\img-8.jpg",
+      "PackagePath": "staticwebassets\\img\\property\\img-8.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\reviewbg.png",
+      "PackagePath": "staticwebassets\\img\\reviewbg.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\side-3.png",
+      "PackagePath": "staticwebassets\\img\\side-3.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\side-flip.png",
+      "PackagePath": "staticwebassets\\img\\side-flip.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\team-1.jpg",
+      "PackagePath": "staticwebassets\\img\\team-1.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\team-2.jpg",
+      "PackagePath": "staticwebassets\\img\\team-2.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\team-3.jpg",
+      "PackagePath": "staticwebassets\\img\\team-3.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\team-4.jpg",
+      "PackagePath": "staticwebassets\\img\\team-4.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\team-5.jpg",
+      "PackagePath": "staticwebassets\\img\\team-5.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\team-6.jpg",
+      "PackagePath": "staticwebassets\\img\\team-6.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\tours\\tour-1.jpg",
+      "PackagePath": "staticwebassets\\img\\tours\\tour-1.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\tours\\tour-10.jpg",
+      "PackagePath": "staticwebassets\\img\\tours\\tour-10.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\tours\\tour-11.jpg",
+      "PackagePath": "staticwebassets\\img\\tours\\tour-11.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\tours\\tour-2.jpg",
+      "PackagePath": "staticwebassets\\img\\tours\\tour-2.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\tours\\tour-3.jpg",
+      "PackagePath": "staticwebassets\\img\\tours\\tour-3.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\tours\\tour-4.jpg",
+      "PackagePath": "staticwebassets\\img\\tours\\tour-4.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\tours\\tour-5.jpg",
+      "PackagePath": "staticwebassets\\img\\tours\\tour-5.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\tours\\tour-6.jpg",
+      "PackagePath": "staticwebassets\\img\\tours\\tour-6.jpg"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\tripadv.png",
+      "PackagePath": "staticwebassets\\img\\tripadv.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\vector1.png",
+      "PackagePath": "staticwebassets\\img\\vector1.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\vector2.png",
+      "PackagePath": "staticwebassets\\img\\vector2.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\visa.png",
+      "PackagePath": "staticwebassets\\img\\visa.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\img\\wrongPass.png",
+      "PackagePath": "staticwebassets\\img\\wrongPass.png"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\js\\JsCommonAjaxCall.js",
+      "PackagePath": "staticwebassets\\js\\JsCommonAjaxCall.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\js\\addadult.js",
+      "PackagePath": "staticwebassets\\js\\addadult.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\js\\counterup.min.js",
+      "PackagePath": "staticwebassets\\js\\counterup.min.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\js\\dropzone.min.js",
+      "PackagePath": "staticwebassets\\js\\dropzone.min.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\js\\flatpickr.js",
+      "PackagePath": "staticwebassets\\js\\flatpickr.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\js\\flickity.pkgd.min.js",
+      "PackagePath": "staticwebassets\\js\\flickity.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\js\\lightbox.min.js",
+      "PackagePath": "staticwebassets\\js\\lightbox.min.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\js\\prism.js",
+      "PackagePath": "staticwebassets\\js\\prism.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\js\\rangeslider.js",
+      "PackagePath": "staticwebassets\\js\\rangeslider.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\js\\select2.min.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\webfonts\\fa-v4compatibility.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-v4compatibility.ttf"
+    },
+    {
+      "Id": "C:\\NH\\TravelProjectIndia_Frentend\\TravelProjectIndia\\wwwroot\\webfonts\\fa-v4compatibility.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.TravelProjectIndia.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.TravelProjectIndia.props",
+      "PackagePath": "build\\TravelProjectIndia.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.TravelProjectIndia.props",
+      "PackagePath": "buildMultiTargeting\\TravelProjectIndia.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.TravelProjectIndia.props",
+      "PackagePath": "buildTransitive\\TravelProjectIndia.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

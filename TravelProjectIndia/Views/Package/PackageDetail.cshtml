@@ -1,0 +1,962 @@
+﻿@{
+    ViewData["Title"] = "PackageDetails";
+}
+
+
+<style>
+    button.minus, button.plus {
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #checkinout1 {
+        height: 46px;
+        border-radius: 91px;
+        border: solid 2px #cd2c22;
+    }
+</style>
+
+<div class="carousel slide carousel-fade mb-6 mt-5" ng-app="PackageDetail" ng-controller="PackageController">
+    <div class="container">
+        <!-- ============================ Hero Search Start ================================== -->
+        <div class="search-explore-wrap pdl_pages_min">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        <div class="search-wrap with-label overio">
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <div class="fliore">
+                                        <div class="rounded-top-3 d-inline-flex overflow-hidden">
+                                            <ul class="nav nav-tabs simple-tabs medium border-0 justify-content-center" id="tour-pills-tab" role="tablist">
+                                                <li class="nav-item custom_btn">
+                                                    <a class="nav-link active" data-bs-toggle="tab" href="#hotels"><i class="fa-solid fa-hotel me-2"></i>Holidays</a>
+                                                </li>
+
+                                                <li class="nav-item alone_with_btm">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#tours"><i class="fa-solid fa-globe me-2"></i>Hotel</a>
+                                                </li>
+                                                <li class="nav-item alone_with_btm">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#cabs"><i class="fa-solid fa-car me-2"></i>Activites</a>
+                                                </li>
+                                                <li class="nav-item alone_with_btm">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#cabs"><i class="fa-solid fa-car me-2"></i>Styacation</a>
+                                                </li>
+                                                <li class="nav-item alone_with_btm">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#cabs"><i class="fa-solid fa-car me-2"></i>Insurance</a>
+                                                </li>
+
+                                                <li class="nav-item alone_with_btm">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#cabs"><i class="fa-solid fa-car me-2"></i>Visa</a>
+                                                </li>
+
+                                                <li class="nav-item alone_with_btm">
+                                                    <a class="nav-link" data-bs-toggle="tab" href="#cabs"><i class="fa-solid fa-car me-2"></i>Transfers</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ============================ Hero Search End ================================== -->
+        <!-- ============================ Video Helps End ================================== -->
+        <section class="bg-cover pdp_new_page" style="background:url(/images/desert_images.png)no-repeat;" data-overlay="5">
+            <div class="container">
+                <div class="row">
+                    <h1></h1>
+                </div>
+            </div>
+            <div class="ht-150"></div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        <div class="video-play-wrap text-center">
+                            <div class="video-play-btn d-flex align-items-center justify-content-center">
+                                <a href="https://www.youtube.com/watch?v=A8EI6JaFbv4" data-bs-toggle="modal" data-bs-target="#popup-video" class="square--90 circle bg-white fs-2 text-primary"><i class="fa-solid fa-play"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ht-150"></div>
+        </section>
+        <!-- ============================ Video Helps End ================================== -->
+        <!-- ============================ Hero Banner End ================================== -->
+
+        <section class="mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 page_specilities">
+                        <ul>
+                            <li><i class="fas fa-bed"></i> Hotels {{ packageData.isHotelIncluded == 1 ? 'Included' : 'Not Included' }}</li>
+                            <li><i class="fa fa-car"></i> Transfers {{ packageData.isTransferIncluded == 1 ? 'Included' : 'Not Included' }}</li>
+                            <li><i class="fa fa-clock"></i> {{ packageData.duration }} </li>
+                            <li><i class="fas fa-plane-departure"></i> Flights {{ packageData.isFlightIncluded == 1 ? 'Included' : 'Not Included' }}</li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-12">
+                        <div class="sides-block">
+                            <div class="card border rounded-3 mb-0">
+                                <div class="single-card px-3 py-3 pt-2 pb-0">
+                                    <p class="text-sm mb-0">Starting From</p>
+                                    <p class="font12 lh-1 mb-0 pt-1">
+                                        <span class="text-dark fs-3 fw-bold"><span> AED {{startfrom}} </span></span>
+                                    </p>
+                                </div>
+
+                                <div class="single-card px-3 py-3 row pt-2 pb-0 cto_btn">
+                                    <div class="col-md-6 p-1"><button ng-click="bookNow()" class="btn btn-sm btn-primary full-width fw-medium text-uppercase mb-2" type="button">Book Now</button></div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-6 p-1">
+                                                <button class="btn btn-sm btn-primary full-width fw-medium text-uppercase mb-2" type="button"><i class="fa fa-phone"></i></button>
+                                            </div>
+                                            <div class="col-md-6 p-1">
+                                                <button class="btn btn-sm btn-primary full-width fw-medium text-uppercase mb-2" type="button"><i class="fab fa-whatsapp"></i></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 col-lg-9 col-md-12">
+                        <div class="tab-content" id="pillstour-tabContent">
+                            <!-- Overview Info -->
+                            <div class="tab-pane fade active show" id="pills-overview" role="tabpanel" aria-labelledby="pills-overview-tab" tabindex="0">
+                                <div class="overview-wrap full-width">
+                                    <div class="card mb-4 border rounded-3">
+                                        <div class="card-header">
+                                            <h4 class="fs-5">Activity Overview</h4>
+                                        </div>
+                                        <div class="card-body" ng-repeat="data in packageData.inclusion">
+                                            <p class="mb-0">
+                                                Day: {{ data.Day }},<br>
+                                                <strong>{{ data.Title }},</strong><br>
+                                                {{ data.Description }}
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                    @* <div class="card mb-4 border rounded-3">
+                                        <div class="card-header">
+                                            <h4 class="fs-5">Terms & Conditions</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="row align-items-center p-0 g-3">
+                                                <li class="col-md-12">
+                                                    <i class="fa-solid fa-check text-success me-2"></i> We reserve the complete right to reschedule an itinerary or route, adjust pricing, or even cancel a tour whenever, at our
+                                                    sole discretion, mainly if we deem it is vital for your safety or convenience.
+                                                </li>
+                                                <li class="col-md-12"><i class="fa-solid fa-check text-success me-2"></i>Unused inclusion in a tour package is non-refundable</li>
+                                                <li class="col-md-12">
+                                                    <i class="fa-solid fa-check text-success me-2"></i>Any guest failing to reach on time at the designated pick-up point will be considered a no-show. No reimbursement or
+                                                    alternative transfer will be arranged in such circumstances.
+                                                </li>
+                                                <li class="col-md-12">
+                                                    <i class="fa-solid fa-check text-success me-2"></i> Should a tour booking be cancelled or altered for reasons of bad weather, vehicle issue or traffic problems, we will make
+                                                    all sincere efforts to arrange alternative service with similar options, however, based on its availability.
+                                                </li>
+                                                <li class="col-md-12">
+                                                    <i class="fa-solid fa-check text-success me-2"></i>The arrangement of seating will depend on its availability and will be done by our driver or tour guides.
+                                                </li>
+                                                <li class="col-md-12">
+                                                    <i class="fa-solid fa-check text-success me-2"></i> Pick-up and drop-off timings listed on the website are approximate, and they will be adjusted as per your location as well
+                                                    as traffic conditions.
+                                                </li>
+                                                <li class="col-md-12"><i class="fa-solid fa-check text-success me-2"></i>Coupon Codes can be redeemed only through online booking process.</li>
+                                                <li class="col-md-12"><i class="fa-solid fa-check text-success me-2"></i>We reserve the right to charge 100% No Show charges if guests do not turn up on time for the pick-up.</li>
+                                                <li class="col-md-12">
+                                                    <i class="fa-solid fa-check text-success me-2"></i> In any case the guest does not show up on time and our vehicle departs from the pickup location, then we will not arrange
+                                                    for alternative transfer & no refund is provided for the missed tour.
+                                                </li>
+                                                <li class="col-md-12">
+                                                    <i class="fa-solid fa-check text-success me-2"></i> Seating arrangement is done as per the availability & it is decided by the Driver or Tour Guide except in case of private
+                                                    transfers.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div> *@
+
+                                    <div class="card mb-4 border rounded-3" ng-repeat="data in packageData.descriptions">
+                                        <div class="card-header">
+                                            <h4 class="fs-5">{{data.DescriptionName}}</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <ul class="row align-items-center p-0 g-3">
+                                                <li class="col-md-6" ng-repeat="line in splitDescription(data.Description)">
+                                                    <i class="fa-solid fa-check text-success me-2"></i>{{line}}
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-12">
+                        <div class="galleryGrid typeGrid_2 mb-lg-0 mb-3 ht-99">
+                            <div class="galleryGrid__item relative d-flex">
+                                <a href="/img/destination/tr-1.jpg" data-lightbox="roadtrip"><img src="/img/destination/tr-1.jpg" alt="image" class="rounded-2 img-fluid" /></a>
+                            </div>
+
+                            <div class="galleryGrid__item position-relative">
+                                <a href="/img/destination/tr-2.jpg" data-lightbox="roadtrip"><img src="/img/destination/tr-2.jpg" alt="image" class="rounded-2 img-fluid" /></a>
+                                <div class="position-absolute end-0 bottom-0 mb-3 me-3">
+                                    <a href="/img/destination/tr-3.jpg" data-lightbox="roadtrip" class="btn btn-md btn-whites fw-medium text-dark"><i class="fa-solid fa-caret-right me-1"></i> Photos</a>
+                                </div>
+                            </div>
+                            <div class="galleryGrid__item">
+                                <a href="/img/destination/tr-4.jpg" data-lightbox="roadtrip"><img src="/img/destination/tr-4.jpg" alt="image" class="rounded-2 img-fluid" /></a>
+                            </div>
+                            <div class="galleryGrid__item">
+                                <a href="/img/destination/tr-5.jpg" data-lightbox="roadtrip"><img src="/img/destination/tr-5.jpg" alt="image" class="rounded-2 img-fluid" /></a>
+                            </div>
+                        </div>
+                        <div class="map_aria mt-5 border rounded-3">
+                            <iframe class="full-width ht-90 grayscale rounded"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.9663095343008!2d-74.00425878428698!3d40.74076684379132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259bf5c1654f3%3A0xc80f9cfce5383d5d!2sGoogle!5e0!3m2!1sen!2sin!4v1586000412513!5m2!1sen!2sin"
+                                    height="500"
+                                    style="border:0;"
+                                    aria-hidden="false"
+                                    tabindex="0"></iframe>
+                            <div class="get_destination_btn">
+                                <a href="#"> Get Directions </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dubai_desert_safari_aria mb-5" id="cartScroll">
+            <div class="container p-0">
+                <div class="des_top_bar">{{ packageData.packageName }}</div>
+                <ul class="d-flex basic_info pt-4 pb-4 m-0">
+                    <li class=""><span> Transfer Option </span></li>
+                    <li class="cus_infom"><span> Package </span></li>
+                    <li class="tour_infos"><span> Tour Date </span></li>
+                    <li class="adult_infioo"><span> Adult </span></li>
+                    <li class="chiuld-infoo"><span> Child </span></li>
+                    <li class="infant-infooo"><span> Infant </span></li>
+                    <li class="total-infooo"><span> Total Amount </span></li>
+                </ul>
+                <div class="row p-4 passenger_transfer pb-5">
+                    <div class="col-md-3"><span> {{ packageData.packageName }} </span></div>
+                    <div class="col-md-2 economy_aria">
+                        <div class="ps-1 pb-0 pt-0 mob-full">
+                            <div> @* class="dropdowns" *@
+                                <div class="selections">
+                                    <span class="selected">{{PackageOptions.options[0].OptionName}}</span>
+                                    @* <div class="caret"></div> *@
+                                </div>
+                                @* <ul class="menu">
+                                    <li class="active">Without transfer</li>
+                                    <li>Premium Economy</li>
+                                    <li>Premium Economy</li>
+                                </ul> *@
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 check_flight_date">
+                        <div class="form-group mb-0">
+                            @* <input type="text" class="form-control fw-bold flatpickr-input" placeholder="Check-In" id="checkinout" /> *@
+
+                            <input type="date" class="form-control fw-bold flatpickr-input" placeholder="Check-In" id="checkinout"
+                                   ng-model="checkinDate" ng-disabled="packageData.isDynamicPackage === 0" ng-change="dateChanged()" />
+
+                            @* <input type="date" class="form-control" placeholder="Check-In" id="checkinout1"
+                                   ng-model="checkinDate" ng-disabled="packageData.isDynamicPackage === 0" ng-change="dateChanged()" /> *@
+
+                        </div>
+                    </div><div class="col-md-1 adelt_one">
+                        <div class="d-flex add_adult">
+                            @* <span class="minus disabled"><i class="fa-solid fa-minus"></i></span>
+                            <span class="guests-input__value"><span> 0 </span></span>
+                            <span class="plus"><i class="fa-solid fa-plus"></i></span> *@
+
+                            <button class="minus" ng-click="ChangeValPax('Adult',-1)"><i class="fa-solid fa-minus"></i></button>
+                            <span class="guests-input__value"><span> {{numberOfAdults}} </span></span>
+                            <button class="plus" ng-click="ChangeValPax('Adult',1)"><i class="fa-solid fa-plus"></i></button>
+
+
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-1 adelt_two">
+                        <div class="d-flex add_adult">
+                            @* <span class="minus disabled"><i class="fa-solid fa-minus"></i></span>
+                            <span class="guests-input__value"><span> 0 </span></span>
+                            <span class="plus"><i class="fa-solid fa-plus"></i></span> *@
+
+                            <button class="minus" ng-click="ChangeValPax('Child',-1)"><i class="fa-solid fa-minus"></i></button>
+                            <span class="guests-input__value"><span> {{numberOfChild}} </span></span>
+                            <button class="plus" ng-click="ChangeValPax('Child',1)"><i class="fa-solid fa-plus"></i></button>
+
+                        </div>
+                    </div>
+                    <div class="col-md-1 adelt_three">
+                        <div class="d-flex add_adult">
+                            @* <span class="minus disabled"><i class="fa-solid fa-minus"></i></span>
+                            <span class="guests-input__value"><span> 0 </span></span>
+                            <span class="plus"><i class="fa-solid fa-plus"></i></span> *@
+                            <button class="minus" ng-click="ChangeValPax('Infant',-1)"><i class="fa-solid fa-minus"></i></button>
+                            <span class="guests-input__value"><span> {{numberOfInfant}} </span></span>
+                            <button class="plus" ng-click="ChangeValPax('Infant',1)"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pack_price"><span> AED {{PackageOptions.options[0].Price}} </span></div>
+                </div>
+
+                <div class="col-md-5 mx-auto des_min_btn_aria" ng-hide="PackageOptions.options.length<=0">
+                    <div class="row next_process" >
+                        <div class="col-lg-5 ad_btn_cart">
+                            <button type="button" class="btn btn-light-primary fw-medium px-4 mt-0" fdprocessedid="shj79" ng-click="addToCart()">Add to Cart</button>
+                        </div>
+                        <div class="col-lg-7 bok_nw_btn">
+                            <button ng-click="bookNow()" type="button" class="btn btn-light-primary fw-medium px-4 send_enq_btn mt-0" fdprocessedid="shj79">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+
+
+<!-- section for itemss end -->
+<section class="pt-5" >
+    <div class="row">
+        <div class="col-md-6">
+            <img width="100%" src="/images/review_img.png" />
+        </div>
+        <div class="col-md-6 review_min_aria">
+            <h2>Top Review</h2>
+
+            <div class="client_review_aria">
+                <div class="custo_info">
+                    <div class="customber_image">
+                        <img src="/images/client_img.png" />
+                    </div>
+                    <div class="name_client">
+                        <h4>Mellissa Gates</h4>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-start">
+                    <span class="me-1 text-xs text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="me-1 text-xs text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="me-1 text-xs text-warning"><i class="fa-solid fa-star"></i></span>
+                    <span class="me-1 text-xs text-warning"><i class="fa-solid fa-star"></i></span>
+                </div>
+                <p>It was an amazing trip and everything so well planned and organized that i just had to bother about packing my bags, rest everything was seamless.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    
+    <script>
+
+        var app = angular.module('PackageDetail', []);
+
+        // Define controller with $location and $http services
+        // app.controller('PackageController', ['$scope', '$location', '$http', function ($scope, $location, $http) {
+        app.controller('PackageController', ['$scope', '$location', '$http', function ($scope, $location, $http) {
+            // Function to extract the slug from the URL
+
+            $scope.IsLoading = 1;
+            $scope.packageData = [];
+            $scope.PackageId = 0;
+            $scope.ages = [
+                { Age: 19, Type: "Adult" },
+                { Age: 19, Type: "Adult" },
+                { Age: 19, Type: "Adult" }
+            ];
+            $scope.PackageOptions = [];
+            $startfrom = 0;
+            $scope.price = 0;
+            $scope.numberOfAdults = 3;
+            $scope.numberOfChild = 0;
+            $scope.numberOfInfant = 0;
+            $scope.finalPrice = 0;
+
+
+           
+
+
+            // $scope.extractSlug = function (url) {
+            //     var matches = url.match(/packagedetail\?Slug=([^&]+)/i); // Case-insensitive regex
+            //     if (matches) {
+            //         return matches[1];
+            //     } else {
+            //         return null;
+            //     }
+            // };
+
+
+
+            $scope.extractSlug = function (url) {
+                var matches = url.match(/[?&]Slug=([^&#]+)/i); // Case-insensitive regex to match Slug parameter, stopping at & or #
+                if (matches) {
+                    return matches[1];
+                } else {
+                    return null;
+                }
+            };
+
+            
+            // Get the current URL using $location service
+            var currentUrl = $location.absUrl();
+            $scope.slug = $scope.extractSlug(currentUrl);
+
+
+
+
+            var checkout = JSON.parse(sessionStorage.getItem('checkout'));
+            if (checkout != null) {
+                sessionStorage.removeItem('checkout');
+            }
+
+            
+
+
+
+            fetchDescription();
+            // console.log("url get:" + $scope.slug);
+
+
+            $scope.generatePax = function () {
+                // Clear the existing ages array
+                $scope.ages = [];
+
+                // Get the arguments as arrays
+                var ages = Array.from(arguments[0]);
+                var types = Array.from(arguments[1]);
+                var counts = Array.from(arguments[2]);
+
+                // Loop through the counts array to generate the ages array
+                for (var i = 0; i < counts.length; i++) {
+                    for (var j = 0; j < counts[i]; j++) {
+                        $scope.ages.push({ Age: ages[i], Type: types[i] });
+                    }
+                }
+            };
+
+
+
+            $scope.addToCart = function () {
+                var Package = $scope.packageData;  // Adjust as needed to fit your data structure
+                var options = $scope.PackageOptions;  // Adjust as needed to fit your data structure
+
+                options.options[0].TravelDate = $scope.PackageOptions.selectedDate;
+
+                // console.log("Cart data");
+                // console.log('PackageOptions: ', $scope.PackageOptions);
+                // console.log('packageData: ', $scope.packageData);
+                debugger;
+                var userId = JSON.parse(sessionStorage.getItem('UserId'));
+                
+                if (userId == null) 
+                {
+                    alert("Please Logint first to add in cart...");
+                    console.log('UserId found:', userId);
+                    var checkout = window.location.href;
+                    sessionStorage.setItem('checkout', JSON.stringify(checkout));
+                    window.location.href = '/checkout';
+                } 
+                else 
+                {
+                    // userId = 0;
+                    // sessionStorage.setItem('UsersId', JSON.stringify(userId));
+                    // console.log('UserId not found. Storing 0.');
+                   
+                }
+
+                var data = {
+                    UserId: userId,
+                    ServiceId: Package.packageId,
+                    ServiceName: Package.packageName,
+                    Type: 'Package',
+                    data: options.options,
+                    Ages: $scope.ages
+                };
+
+                console.log("Cart data after");
+                console.log(data);
+                debugger;
+
+                // Send the POST request
+                $http.post('https://nextholidaysinadiaapi.nextholidays.co.in/Package/AddToCart', data)
+                    .then(function (response) {
+                        console.log('Success:', response.data);
+                        if (response.data.status = 1) 
+                        {
+                            alert(response.data.message);
+                            if (response.data.userId == 0) {
+                                // sessionStorage.setItem('UsersId', JSON.stringify(response.data.tempId));
+                                // console.log(JSON.parse(sessionStorage.getItem('UsersId')));
+                            }
+                        }
+                        else 
+                        {
+                            alert(response.data.message);
+                        }
+                    })
+                    .catch(function (error) {
+                        console.error('Error:', error);
+                    });
+            };
+
+
+            function fetchDescription() {
+                // Construct the request body
+                const requestBody = {
+                    Slug: $scope.slug
+                };
+                const baseUrl = 'https://nextholidaysinadiaapi.nextholidays.co.in/Package/GetPackageDescription';
+                // Make a POST request with the slug in the body
+                $http.post(baseUrl, requestBody)
+                    .then(function (response) {
+                        $scope.packageData = response.data;
+                        console.log('scope.packageData', $scope.packageData);
+                        $scope.PackageId = $scope.packageData.packageId;
+
+                        sessionStorage.setItem('packageData', JSON.stringify($scope.packageData));
+
+                        if ($scope.packageData.isDynamicPackage==0)
+                        {
+                            $scope.checkinDate = $scope.packageData.selectedDate;
+
+                        }
+                        else
+                        {
+                            // getPackageDates($scope.PackageId);
+                            var today = new Date();
+                            // Get tomorrow's date by adding 1 day to today's date
+                            var tomorrow = new Date(today);
+                            tomorrow.setDate(tomorrow.getDate() + 1);
+
+                            var day = tomorrow.getDate();
+                            var month = tomorrow.toLocaleString('default', { month: 'short' });
+                            var year = tomorrow.getFullYear();
+                            var formattedDate = day + '-' + month + '-' + year;
+
+                            // console.log('formattedDate:-',formattedDate);
+
+                            $scope.checkinDate = formattedDate;
+                        }
+
+                        getPackageOptions($scope.PackageId, $scope.ages, $scope.checkinDate);
+                        // console.log('Package Data:', $scope.packageData);
+                        // console.log('date', $scope.checkinDate);
+                    })
+                    .catch(function (error) {
+                        console.error('Error fetching data:', error);
+                    });
+            }
+
+
+            
+
+            function getPackageDates(packageId) {
+                // API URL
+                const datesApiUrl = 'https://nextholidaysinadiaapi.nextholidays.co.in/Package/GetPackageDates';
+
+                // Request body
+                const requestBody = {
+                    PackageId: packageId
+                };
+                
+                // Make a POST request to get package dates
+                $http.post(datesApiUrl, requestBody)
+                    .then(function (response) {
+                        $scope.packageDates = response.data;
+                        if ($scope.packageData.isDynamicPackage === 0) {
+                            $scope.checkinDate = $scope.packageDates[0].Date;
+                        } 
+                        else 
+                        {
+                            var today = new Date();
+                            // Get tomorrow's date by adding 1 day to today's date
+                            var tomorrow = new Date(today);
+                            tomorrow.setDate(tomorrow.getDate() + 1);
+
+                            var day = tomorrow.getDate();
+                            var month = tomorrow.toLocaleString('default', { month: 'short' });
+                            var year = tomorrow.getFullYear();
+                            var formattedDate = day + '-' + month + '-' + year;
+
+                            $scope.checkinDate = formattedDate;
+
+                            // console.log('formattedDate', formattedDate);
+                        }
+                        // console.log('Package Dates: Gautam', $scope.packageDates);
+                    })
+                    .catch(function (error) {
+                        console.error('Error fetching package dates:', error);
+                    });
+            };
+
+
+            $scope.splitDescription = function (description) {
+                // Split by '\n' and remove any empty lines or lines with whitespace only
+                return description.split('\n').filter(function (line) {
+                    return line.trim() !== '';
+                });
+            };
+            
+
+            // Function to add an adult
+            $scope.ChangeValPax = function (type, value) {
+                if (type == "Adult") 
+                {
+                    $scope.numberOfAdults += value;
+                    if ($scope.numberOfAdults<=0) 
+                    {
+                        $scope.numberOfAdults++;
+                        $scope.OpenAlert("Adult can not be lower then " + $scope.numberOfAdults + " for selected Package.");
+                            return false;
+                    }
+                    if ($scope.numberOfChild >= 1) {
+                        if ($scope.numberOfInfant >= 1) {
+                            $scope.generatePax([19, 8, 1], ['Adult', 'Child', 'Infant'], [$scope.numberOfAdults, $scope.numberOfChild, $scope.numberOfInfant]);
+                        }
+                        $scope.generatePax([19, 8], ['Adult', 'Child'], [$scope.numberOfAdults, $scope.numberOfChild]);
+                    } 
+                    else if ($scope.numberOfInfant >= 1) {
+                        $scope.generatePax([19, 1], ['Adult', 'Infant'], [$scope.numberOfAdults, $scope.numberOfInfant]);
+                    }
+                    else {
+                        $scope.generatePax([19], ['Adult'], [$scope.numberOfAdults]);
+                    }
+
+                    getPackageOptions($scope.PackageId, $scope.ages, $scope.checkinDate)
+                        .then(() => {
+                            if ($scope.PackageOptions.options.length <= 0) 
+                            {
+                               
+                                $scope.OpenAlert("Adult can not be greater then " + ($scope.numberOfAdults-1) + " for selected Package.");
+                                $scope.ChangeValPax('Adult', -1);
+                            }
+
+                        })
+                        .catch(error => {
+                            console.error('An error occurred:', error);
+                        });
+                }
+                else if (type == "Child") {
+                    $scope.numberOfChild += value;
+                    if ($scope.numberOfChild < 0) {
+                        $scope.numberOfChild++;
+                        $scope.OpenAlert("Child can not be lower then " + $scope.numberOfChild + " for selected Package.");
+                        return false;
+                    }
+
+                    if ($scope.numberOfInfant >= 1) {
+                        $scope.generatePax([19, 8, 1], ['Adult', 'Child', 'Infant'], [$scope.numberOfAdults, $scope.numberOfChild, $scope.numberOfInfant]);
+                    }
+                    else 
+                    {
+                        $scope.generatePax([19, 8], ['Adult', 'Child'], [$scope.numberOfAdults, $scope.numberOfChild]);
+                    }
+
+                    getPackageOptions($scope.PackageId, $scope.ages, $scope.checkinDate)
+                        .then(() => {
+                            if ($scope.PackageOptions.options.length <= 0) {
+
+                                $scope.OpenAlert("Child can not be greater then " + ($scope.numberOfChild - 1) + " for selected Package.");
+                                $scope.ChangeValPax('Child', -1);
+                            }
+
+                        })
+                        .catch(error => {
+                            console.error('An error occurred:', error);
+                        });
+                    
+                }
+                else if (type == "Infant") {
+
+                    $scope.numberOfInfant += value;
+                    if ($scope.numberOfInfant < 0) {
+                        $scope.numberOfInfant++;
+                        $scope.OpenAlert("Infant can not be lower then " + $scope.numberOfInfant + " for selected Package.");
+                        return false;
+                    }
+                    if ($scope.numberOfChild >= 1) 
+                    {
+                        $scope.generatePax([19, 8, 1], ['Adult', 'Child', 'Infant'], [$scope.numberOfAdults, $scope.numberOfChild, $scope.numberOfInfant]);
+                    }
+                    else 
+                    {
+                        $scope.generatePax([19, 1], ['Adult', 'Infant'], [$scope.numberOfAdults, $scope.numberOfInfant]);
+                    }
+                    getPackageOptions($scope.PackageId, $scope.ages, $scope.checkinDate)
+                        .then(() => {
+                            if ($scope.PackageOptions.options.length <= 0) {
+
+                                $scope.OpenAlert("Infant can not be greater then " + ($scope.numberOfInfant - 1) + " for selected Package.");
+                                $scope.ChangeValPax('Infant', -1);
+                            }
+
+                        })
+                        .catch(error => {
+                            console.error('An error occurred:', error);
+                        });
+                }
+            };
+            
+
+            $scope.countclick = 1;
+            
+            $scope.dateChanged = function () {
+               
+                var date = new Date($scope.checkinDate);
+                var day = date.getDate();
+                var monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                var monthIndex = date.getMonth();
+                var year = date.getFullYear();
+                var formattedDate = day + '-' + monthNames[monthIndex] + '-' + year;
+
+                $scope.checkinDate = formattedDate;
+
+                if ($scope.countclick == 2) {
+                    // console.log('Selected date:', $scope.checkinDate);
+
+
+                    getPackageOptions($scope.PackageId, $scope.ages, $scope.checkinDate)
+                        .then(() => {
+                            if ($scope.PackageOptions.options.length <= 0) {
+
+                                $scope.OpenAlert("Oops! Options Not available for selected occupancy.");
+                                
+                            }
+
+                        })
+                        .catch(error => {
+                            console.error('An error occurred:', error);
+                        });
+
+
+                    $scope.countclick = 0;
+                }
+                $scope.countclick++;
+                
+                
+            };
+
+
+
+
+            function getPackageOptions(packageId, ages, selectedDate) {
+                return new Promise((resolve, reject) => {
+                    // API URL
+                    const apiUrl = 'https://nextholidaysinadiaapi.nextholidays.co.in/Package/GetPackageOptions';
+                    $scope.isFetchingPackageOptions = true;
+                    // Request body
+                    const requestBody = {
+                        PackageId: packageId,
+                        travelDate: selectedDate,
+                        Ages: ages
+                    };
+                    // console.log('requestBody', requestBody);
+
+
+                    fetch(apiUrl, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(requestBody)
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        $scope.PackageOptions = data;
+
+                            sessionStorage.setItem('packageOptions', JSON.stringify($scope.PackageOptions));
+                        $scope.checkinDate = $scope.PackageOptions.selectedDate;
+                        console.log('Package Options:', data);
+
+                        if ($scope.PackageOptions.options.length > 0 && $scope.IsLoading == 1) {
+                            if ($scope.PackageOptions.options[0].NoOfAdult == 3) {
+                                $scope.startfrom = $scope.PackageOptions.options[0].AdultPrice / 3;
+                                $scope.IsLoading++;
+                            } else if ($scope.PackageOptions.options[0].NoOfAdult == 2) {
+                                $scope.startfrom = $scope.PackageOptions.options[0].AdultPrice / 2;
+                                $scope.IsLoading++;
+                            } else if ($scope.PackageOptions.options[0].NoOfAdult == 1) {
+                                $scope.startfrom = $scope.PackageOptions.options[0].AdultPrice;
+                                $scope.IsLoading++;
+                            }
+                            // Process the data as needed
+                        }
+
+                        $scope.$apply();
+                        resolve();
+                    })
+                    .catch(error => {
+                        console.error('Error fetching package options:', error);
+                        $scope.$apply();
+                    });
+                });
+            }
+
+
+            // function getPackageOptions(packageId, ages,selectedDate) {
+            //     // API URL
+            //     const apiUrl = 'https://nextholidaysinadiaapi.nextholidays.co.in/Package/GetPackageOptions';
+            //     $scope.isFetchingPackageOptions = true;
+            //     // Request body
+            //     const requestBody = {
+            //         PackageId: packageId,
+            //         travelDate: selectedDate,
+            //         Ages: ages
+                    
+            //     };
+            //     console.log('requestBody', requestBody);
+
+            //     // Fetch options from the API using POST method
+            //     fetch(apiUrl, {
+            //         method: 'POST',
+            //         headers: {
+            //             'Content-Type': 'application/json'
+            //         },
+            //         body: JSON.stringify(requestBody)
+            //     })
+            //     .then(response => response.json())
+            //     .then(data => {
+                       
+            //         $scope.PackageOptions = data;
+            //         $scope.checkinDate = $scope.PackageOptions.selectedDate;
+            //         console.log('Package Options:', data);
+
+            //         if ($scope.PackageOptions.options.length > 0) {
+            //             $scope.isFetchingPackageOptions = false;
+            //         }
+
+            //         if ($scope.PackageOptions.options.length > 0 && $scope.IsLoading==1) {
+            //             if ($scope.PackageOptions.options[0].NoOfAdult == 3) {
+            //                 $scope.startfrom = $scope.PackageOptions.options[0].AdultPrice / 3;
+            //                 $scope.IsLoading++;
+            //             }
+            //             else if ($scope.PackageOptions.options[0].NoOfAdult == 2) {
+            //                 $scope.startfrom = $scope.PackageOptions.options[0].AdultPrice / 2;
+            //                 $scope.IsLoading++;
+            //             }
+            //             else if ($scope.PackageOptions.options[0].NoOfAdult == 1) {
+            //                 $scope.startfrom = $scope.PackageOptions.options[0].AdultPrice;
+            //                 $scope.IsLoading++;
+            //             }
+            //             // console.log('start from', $scope.startfrom);
+                            
+            //             // Process the data as needed
+            //         }
+
+            //         $scope.$apply();
+            //     })
+            //     .catch(error => {
+            //         console.error('Error fetching package options:', error);
+            //         $scope.$apply();
+            //     });
+            // }
+
+            $scope.OpenAlert = function (message) {
+                alert(message);
+            };
+
+            $scope.initiateOrder = function () {
+                var apiUrl = 'https://nextholidaysinadiaapi.nextholidays.co.in/Order/inititateOrder';
+
+                // Return the promise from $http.post
+                return $http.post(apiUrl, {})
+                    .then(function (response) {
+                        // console.log('Order ID:', response.data);
+                        $scope.orderID = response.data;
+
+                        // Do something with the order ID
+                    })
+                    .catch(function (error) {
+                        console.error('Error initiating order:', error);
+                        throw error; // Rethrow the error to propagate it
+                    });
+            };
+
+            $scope.paymentData = {
+                Userid: 0,
+                TempUserId: "",
+                CartIds: "",
+                amount: 0,
+                currency: "AED",
+                orderid: "",
+                mobile: "",
+                name: "",
+                email: "",
+                gender: "",
+                countrycode: 0,
+                country: ""
+            };
+
+            
+
+            $scope.bookNow = function () {
+
+
+                var id = sessionStorage.getItem('UserId');
+                if(id!=null)
+                {
+                    $scope.paymentData.Userid = id;
+                    console.log("id=", id)
+                }
+
+                $scope.initiateOrder()
+                    .then(function () {
+                        console.log("Order ID", $scope.orderID);
+                        sessionStorage.setItem('OrderID', JSON.stringify($scope.orderID));
+
+                        $scope.paymentData.orderid = $scope.orderID;
+                        $scope.paymentData.amount = $scope.PackageOptions.options[0].Price;
+                        $scope.paymentData.CartIds = $scope.packageId;
+
+                        console.log('Payment Data:', $scope.paymentData);
+
+                        sessionStorage.setItem('paymentData', JSON.stringify($scope.paymentData));
+
+                         window.location.href = '/checkout';
+                    })
+                    .catch(function (error) {
+                        console.error('Error in bookNow:', error);
+                    });
+            };
+
+
+        }]);
+
+    </script>
+}

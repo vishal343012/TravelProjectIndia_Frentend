@@ -1,0 +1,117 @@
+﻿@{
+    ViewData["Title"] = "verification";
+}
+
+<style>
+    .resent {
+        background: none;
+        border: none;
+        color: #3f7bff;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+    }
+</style>
+
+<section class="section_body">
+    <div class="container verification_bg p-5">
+        <div class="card p-5 verification_card">
+            <div class="row">
+                <div class="col-lg-6 p-3" style="position: relative;">
+                    <img src="/images/OTP.png" class="img-fluid" alt="Logo" style="height: 100%;">
+                </div>
+
+                <div class="col-lg-6 p-5 verification_column">
+                    <div class="card verifi_card">
+                        <div class="otp-box">
+                            <h2>OTP Verification</h2>
+                            <p>Enter OTP Code sent to your Emailid</p>
+                            <form id="otpForm" onsubmit="VerifOTP(event)">
+                                <div class="otp-inputs">
+                                    <input type="text" maxlength="6" class="otp-input" id="top1" required>
+                                </div>
+                                <div class="resend">
+                                    <h6>Didn't receive OTP code?</h6>
+                                    <button type="button" class="resent" onclick="generateOTP()"> Resend Code</button>
+                                </div>
+                                <button type="submit" class="verify-btn">Verify & Proceed</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <script>
+        function VerifOTP(event) {
+            event.preventDefault();
+            debugger;
+            var emailId = JSON.parse(sessionStorage.getItem('UsersEemail'));
+            var tempId = JSON.parse(sessionStorage.getItem('TempUser'));
+            var otp = document.getElementById('top1').value;
+
+            var data = {
+                "Password": otp,
+                "Emailid": tempId
+            };
+            console.log('data', data);
+            debugger;
+            fetch('https://nextholidaysinadiaapi.nextholidays.co.in/User/VerifyOTP', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status == 0) {
+                        alert(data.message);
+                    } else {
+                        sessionStorage.setItem('verify', JSON.stringify('true'));
+                        alert(data.message);
+                        window.location.href = '/checkout';
+
+                    }
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                    // Handle error response
+                });
+        }
+
+        function generateOTP() {
+            var emailId = JSON.parse(sessionStorage.getItem('UsersEemail'));
+            console.log('UsersEmail:', emailId);
+            debugger;
+            const apiUrl = 'https://nextholidaysinadiaapi.nextholidays.co.in/User/GenerateOTP';
+            const payload = {
+                Emailid: emailId
+            };
+
+            fetch(apiUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data);
+                    alert(data.message);
+                })
+                .catch(error => {
+                    alert('Error generating OTP:');
+                });
+        }
+    </script>
+}

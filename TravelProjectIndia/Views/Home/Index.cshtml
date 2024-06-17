@@ -1,0 +1,851 @@
+﻿@{
+	ViewData["Title"] = "Holiday Page";
+}
+
+
+<div class="carousel slide carousel-fade mb-6" ng-app="Home" ng-controller="HomeController">
+	<div class="carousel-inner">
+		<div class="carousel-item active bg-cover" style="background:url(/images/holiday_slider_min.png)no-repeat;" data-overlay="6"></div>
+	</div>
+	<!-- ============================ Hero Banner End ================================== -->
+	<!-- ============================ Hero Search Start ================================== -->
+	<div class="search-explore-wrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12 col-lg-12 col-md-12">
+					<div class="search-wrap with-label overio">
+						<div class="row">
+							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+								<div class="fliore">
+									<div class="rounded-top-3 d-inline-flex overflow-hidden">
+										<ul class="nav nav-tabs simple-tabs medium border-0 justify-content-center" id="tour-pills-tab" role="tablist">
+											<li class="nav-item custom_btn">
+												<a class="nav-link active" data-bs-toggle="tab" href="#hotels"><i class="fa-solid fa-hotel me-2"></i>Holidays</a>
+											</li>
+											@* <li class="nav-item alone_with_btm">
+												<a class="nav-link" data-bs-toggle="tab" href="#flights"> <i class='fas fa-plane-departure'></i> Flights</a>
+											</li>
+											<li class="nav-item alone_with_btm">
+												<a class="nav-link" data-bs-toggle="tab" href="#tours"><i class='fas fa-bed'></i> Hotel</a>
+											</li>
+											<li class="nav-item alone_with_btm">
+												<a class="nav-link" data-bs-toggle="tab" href="#cabs"> <i class="fa fa-blind"></i> Activites</a>
+											</li>
+											<li class="nav-item alone_with_btm">
+												<a class="nav-link" data-bs-toggle="tab" href="#cabs"> <i class='fas fa-umbrella-beach'></i> Styacation</a>
+											</li>
+											<li class="nav-item alone_with_btm">
+												<a class="nav-link" data-bs-toggle="tab" href="#cabs"> <i class='fas fa-shield-alt'></i> Insurance</a>
+											</li>
+
+											<li class="nav-item alone_with_btm">
+												<a class="nav-link" data-bs-toggle="tab" href="#cabs"> <i class='far fa-file-alt'></i> Visa</a>
+											</li>
+
+											<li class="nav-item alone_with_btm">
+												<a class="nav-link" data-bs-toggle="tab" href="#cabs"><i class="fa-solid fa-car me-2"></i>Transfers</a>
+											</li>
+ *@										</ul>
+									</div>
+
+									<div class="tab-content bg-white rounded-bottom-3 shadow-wrap p-3">
+										<div class="tab-pane show active" id="hotels">
+											<div class="row gy-3 gx-md-3 gx-sm-2">
+												<div class="col-xl-12 col-lg-12 col-md-12">
+													<div class="row gy-3 gx-md-3 gx-sm-2">
+														<div class="col-xl-8 col-lg-6 col-md-12">
+															<div class="row gy-3 gx-lg-2 gx-3">
+																<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 position-relative">
+																	<div class="form-group hdd-arrow mb-0">
+																		<select class="leaving form-control fw-bold">
+																			<option value="">Select</option>
+																			<option value="ny">New York</option>
+																			<option value="sd">San Diego</option>
+																			<option value="sj">San Jose</option>
+																			<option value="ph">Philadelphia</option>
+																			<option value="nl">Nashville</option>
+																			<option value="sf">San Francisco</option>
+																			<option value="hu">Houston</option>
+																			<option value="sa">San Antonio</option>
+																		</select>
+																	</div>
+																	<div class="btn-flip-icon mt-md-0">
+																		<button class="p-0 m-0 text-primary"><i class="fa-solid fa-right-left"></i></button>
+																	</div>
+																</div>
+																<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+																	<div class="form-groupp hdd-arrow mb-0">
+																		<select class="goingto form-control fw-bold">
+																			<option value="">Select</option>
+																			<option value="lv">Las Vegas</option>
+																			<option value="la">Los Angeles</option>
+																			<option value="kc">Kansas City</option>
+																			<option value="no">New Orleans</option>
+																			<option value="kc">Jacksonville</option>
+																			<option value="lb">Long Beach</option>
+																			<option value="cl">Columbus</option>
+																			<option value="cn">Canada</option>
+																		</select>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col-xl-4 col-lg-6 col-md-12 col-sm-12">
+															<div class="form-group mb-0">
+																<input type="text" class="form-control fw-bold" placeholder="Check-In & Check-Out" id="checkinout" readonly="readonly" />
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-xl-3 col-lg-6 col-md-6 mt-2">
+															<div class="form-group">
+																<select class="select form-control">
+																	<option value="lv">1 Traveler</option>
+																	<option value="la">Los Angeles</option>
+																	<option value="kc">Kansas City</option>
+																	<option value="no">New Orleans</option>
+																	<option value="kc">Jacksonville</option>
+																	<option value="lb">Long Beach</option>
+																	<option value="cl">Columbus</option>
+																	<option value="cn">Canada</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-xl-3 col-lg-6 col-md-6 mt-2">
+															<div class="form-group">
+																<select class="select form-control">
+																	<option value="lv">Filter</option>
+																	<option value="la">Los Angeles</option>
+																	<option value="kc">Kansas City</option>
+																	<option value="no">New Orleans</option>
+																	<option value="kc">Jacksonville</option>
+																	<option value="lb">Long Beach</option>
+																	<option value="cl">Columbus</option>
+																	<option value="cn">Canada</option>
+																</select>
+															</div>
+														</div>
+
+														<div class="col-xl-2 col-lg-6 col-md-6 flight_included_info">
+															<div class="form-group mb-0 pb-0 mt-3">
+																<div class="form-group mb-0">
+																	<div class="form-check form-check-inline">
+																		<input class="form-check-input" type="radio" name="gender" id="male" value="option1">
+																		<label class="form-check-label" for="male">Without Flight Included</label>
+																	</div>
+																	<div class="form-check form-check-inline">
+																		<input class="form-check-input" type="radio" name="gender" id="male" value="option1">
+																		<label class="form-check-label" for="male"> Flight Included</label>
+																	</div>
+
+																</div>
+															</div>
+														</div>
+
+														<div class="col-xl-2 col-lg-6 col-md-6 mt-2">
+															<div class="book_flight_message mt-2">
+																<p> Book International and Domestic Flights </p>
+															</div>
+														</div>
+
+														<div class="col-xl-2 col-lg-4 col-md-4 col-sm-4">
+															<div class="form-group mb-0 mt-2">
+																<button type="button" class="btn btn-primary full-width fw-medium"><i class="fa-solid fa-magnifying-glass me-2"></i>Search</button>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="flights">
+											<div class="row gx-lg-2 g-3">
+												<div class="col-xl-5 col-lg-5 col-md-12">
+													<div class="row gy-3 gx-lg-2 gx-3">
+														<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 position-relative">
+															<div class="form-group hdd-arrow mb-0">
+																<select class="leaving form-control fw-bold">
+																	<option value="">Select</option>
+																	<option value="ny">New York</option>
+																	<option value="sd">San Diego</option>
+																	<option value="sj">San Jose</option>
+																	<option value="ph">Philadelphia</option>
+																	<option value="nl">Nashville</option>
+																	<option value="sf">San Francisco</option>
+																	<option value="hu">Houston</option>
+																	<option value="sa">San Antonio</option>
+																</select>
+															</div>
+															<div class="btn-flip-icon mt-md-0">
+																<button class="p-0 m-0 text-primary"><i class="fa-solid fa-right-left"></i></button>
+															</div>
+														</div>
+														<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+															<div class="form-groupp hdd-arrow mb-0">
+																<select class="goingto form-control fw-bold">
+																	<option value="">Select</option>
+																	<option value="lv">Las Vegas</option>
+																	<option value="la">Los Angeles</option>
+																	<option value="kc">Kansas City</option>
+																	<option value="no">New Orleans</option>
+																	<option value="kc">Jacksonville</option>
+																	<option value="lb">Long Beach</option>
+																	<option value="cl">Columbus</option>
+																	<option value="cn">Canada</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-xl-4 col-lg-4 col-md-12">
+													<div class="row gy-3 gx-lg-2 gx-3">
+														<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+															<div class="form-group mb-0">
+																<input class="form-control fw-bold choosedate" type="text" placeholder="Departure.." readonly="readonly" />
+															</div>
+														</div>
+														<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+															<div class="form-group mb-0">
+																<input class="form-control fw-bold choosedate" type="text" placeholder="Return.." readonly="readonly" />
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-xl-2 col-lg-2 col-md-12">
+													<div class="form-groupp hdd-arrow mb-0">
+														<select class="occupant form-control fw-bold">
+															<option value="">Select</option>
+															<option value="lv">01 Adult</option>
+															<option value="la">02 Adult</option>
+															<option value="kc">03 Adult</option>
+															<option value="no">04 Adult</option>
+															<option value="kc">05 Adult</option>
+															<option value="lb">06 Adult</option>
+															<option value="cl">07 Adult</option>
+															<option value="cn">08 Adult</option>
+														</select>
+													</div>
+												</div>
+												<div class="col-xl-1 col-lg-1 col-md-12">
+													<div class="form-group mb-0">
+														<button type="button" class="btn btn-primary full-width fw-medium"><i class="fa-solid fa-magnifying-glass fs-5"></i></button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="tours">
+											<div class="row gy-3 gx-md-3 gx-sm-2">
+												<div class="col-xl-8 col-lg-7 col-md-12">
+													<div class="row gy-3 gx-md-3 gx-sm-2">
+														<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 position-relative">
+															<div class="form-group hdd-arrow mb-0">
+																<select class="goingto form-control fw-bold">
+																	<option value="">Select</option>
+																	<option value="ny">New York</option>
+																	<option value="sd">San Diego</option>
+																	<option value="sj">San Jose</option>
+																	<option value="ph">Philadelphia</option>
+																	<option value="nl">Nashville</option>
+																	<option value="sf">San Francisco</option>
+																	<option value="hu">Houston</option>
+																	<option value="sa">San Antonio</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+															<div class="form-group mb-0">
+																<input type="text" class="form-control choosedate fw-bold" placeholder="Choose Date" readonly="readonly" />
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-xl-4 col-lg-5 col-md-12">
+													<div class="row gy-3 gx-md-3 gx-sm-2">
+														<div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+															<div class="form-group hdd-arrow mb-0">
+																<select class="tour form-control fw-bold">
+																	<option value="">Select</option>
+																	<option value="ny">Family Package</option>
+																	<option value="sd">Honymoon Package</option>
+																	<option value="sj">Group Package</option>
+																	<option value="ph">Desert</option>
+																	<option value="nl">History</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+															<div class="form-group mb-0">
+																<button type="button" class="btn btn-primary full-width fw-medium"><i class="fa-solid fa-magnifying-glass me-2"></i>Search</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="cabs">
+											<div class="row gy-3 gx-md-3 gx-sm-2">
+												<div class="col-xl-8 col-lg-7 col-md-12">
+													<div class="row gy-3 gx-md-3 gx-sm-2">
+														<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 position-relative">
+															<div class="form-group hdd-arrow mb-0">
+																<select class="pickup form-control fw-bold">
+																	<option value="">Select</option>
+																	<option value="ny">New York</option>
+																	<option value="sd">San Diego</option>
+																	<option value="sj">San Jose</option>
+																	<option value="ph">Philadelphia</option>
+																	<option value="nl">Nashville</option>
+																	<option value="sf">San Francisco</option>
+																	<option value="hu">Houston</option>
+																	<option value="sa">San Antonio</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+															<div class="form-group hdd-arrow mb-0">
+																<select class="drop form-control fw-bold">
+																	<option value="">Select</option>
+																	<option value="ny">New York</option>
+																	<option value="sd">San Diego</option>
+																	<option value="sj">San Jose</option>
+																	<option value="ph">Philadelphia</option>
+																	<option value="nl">Nashville</option>
+																	<option value="sf">San Francisco</option>
+																	<option value="hu">Houston</option>
+																	<option value="sa">San Antonio</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="col-xl-4 col-lg-5 col-md-12">
+													<div class="row gy-3 gx-md-3 gx-sm-2">
+														<div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+															<div class="form-group mb-0">
+																<input type="text" class="form-control choosedate fw-bold" placeholder="Choose Pickup Date" readonly="readonly" />
+															</div>
+														</div>
+														<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+															<div class="form-group mb-0">
+																<button type="button" class="btn btn-primary full-width fw-medium"><i class="fa-solid fa-magnifying-glass me-2"></i>Search</button>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- ============================ Hero Search End ================================== -->
+	<!-- find more section -->
+
+	<section class="find_think_more">
+		<div class="container">
+			<div class="cont">
+				<div>
+					<h3 class="over_head">Find best things to do <span class="color-red"> across Globe </span></h3>
+				</div>
+				<div class="row mt-4">
+					<div class="col-md-5 cust-card">
+
+						<a href="/package/Packagelist?Slug=Dubai">
+							<div class="card text-white back_card back_img">
+								<img src="images/im1.png" class="card-img imagcol" alt="..." />
+								<div class="card-img-overlay d-flex flex-column justify-content-center cus_over">
+									<div class="row over_col">
+										<div class="col-md-6">
+											<h2 class="card-title text-center pt-2 font_new">
+												Dubai
+											</h2>
+										</div>
+										<div class="col-md-6">
+											<div class="px-3">
+												<h5 class="star_sec px-1">STARTS FROM</h5>
+												<h5 class="aed_sec">AED 1200</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-7 cust-card">
+						<a href="/package/Packagelist?Slug=Singapore">
+							<div class="card text-white back_card back_img">
+								<img src="images/im2.png" class="card-img imagcol" alt="..." />
+								<div class="card-img-overlay d-flex flex-column justify-content-center cus_over">
+									<div class="row over_col">
+										<div class="col-md-6">
+											<h2 class="card-title text-center pt-2 font_new">
+												Singapore
+											</h2>
+										</div>
+										<div class="col-md-6">
+											<div class="px-4">
+												<h5 class="star_sec px-1">STARTS FROM</h5>
+												<h5 class="aed_sec">AED 1200</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-7 cust-card">
+
+						<a href="/package/Packagelist?Slug=Malasiya">
+							<div class="card text-white back_card back_img">
+								<img src="images/im3.png" class="card-img imagcol" alt="..." />
+								<div class="card-img-overlay d-flex flex-column justify-content-center cus_over">
+									<div class="row over_col">
+										<div class="col-md-6">
+											<h2 class="card-title text-center pt-2 font_new">
+												Malasiya
+											</h2>
+										</div>
+										<div class="col-md-6">
+											<div class="px-4">
+												<h5 class="star_sec px-1">STARTS FROM</h5>
+												<h5 class="aed_sec">AED 1200</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-5 cust-card">
+						<a href="/package/Packagelist?Slug=Turkey">
+							<div class="card text-white back_card back_img">
+								<img src="images/im4.png" class="card-img imagcol" alt="..." />
+								<div class="card-img-overlay d-flex flex-column justify-content-center cus_over">
+									<div class="row over_col">
+										<div class="col-md-6">
+											<h2 class="card-title text-center pt-2 font_new">
+												Turkey
+											</h2>
+										</div>
+										<div class="col-md-6">
+											<div class="px-3">
+												<h5 class="star_sec px-1">STRATS FROM</h5>
+												<h5 class="aed_sec">AED 1200</h5>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--end section -->
+	<!-- holiday by theme-->
+
+	<section class="holidayTheme">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-4 col-lg-4 col-md-12 explore_section">
+					<span> Explore </span>
+					<h1>
+						HOLIDAYS
+					</h1>
+					<span> by theme </span>
+				</div>
+				<div class="col-xl-7 col-lg-7 col-md-12">
+					<!-- inner content -->
+					<div class="row ">
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="visa_service_card_wrapper">
+								<div class="visa_card_img">
+									<img src="/images/top_reco01.png" alt="img">
+								</div>
+								<div class="visa_card_text">
+									<h6 class="plc_title">
+										<a href="#"><strong> Honeymoon  </strong></a>
+									</h6>
+									<ul class="hotel_inlcuded">
+										<li> <span> Beaches </span></li>
+										<li><span> City Escape </span></li>
+										<li><span> Adventure </span></li>
+										<li><span> Hill Vacays </span></li>
+									</ul>
+								</div>
+								<div class="col-md-12">
+									<div class="row p-3 pt-0">
+										<div class="text-dark view_more_btn"><a href="#"> View More </a></div>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="visa_service_card_wrapper">
+								<div class="visa_card_img">
+									<img src="/images/top_reco02.png" alt="img">
+								</div>
+								<div class="visa_card_text">
+									<h6 class="plc_title"><strong> Pilgrimage	</strong></h6>
+									<ul class="hotel_inlcuded">
+										<li><span> Ayodhya </span></li>
+										<li><span> Varanasi </span></li>
+										<li><span>  Gujrat </span></li>
+										<li><span> Vaishano Devi </span> </li>
+									</ul>
+								</div>
+								<div class="col-md-12">
+									<div class="row p-3 pt-0">
+										<div class="text-dark view_more_btn"><a href="#"> View More </a></div>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							<div class="visa_service_card_wrapper">
+								<div class="visa_card_img">
+									<img src="/images/top_reco03.png" alt="img">
+								</div>
+								<div class="visa_card_text">
+									<h6 class="plc_title">
+										<a href="#"><strong> Wild Escapes </strong></a>
+									</h6>
+									<ul class="hotel_inlcuded">
+										<li><span> Ranthambhore </span></li>
+										<li><span> Corbett </span></li>
+										<li><span> Bandhavghar </span></li>
+										<li><span> Kanha </span></li>
+									</ul>
+								</div>
+								<div class="col-md-12">
+									<div class="row p-3 pt-0">
+										<div class="text-dark view_more_btn"><a href="#"> View More </a></div>
+
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<!-- end section -->
+	<!-- top conuntry -->
+
+	<section>
+		<div class="container">
+			<div class="cont mt-5">
+				<div>
+					<h3 class="over_head mb-5">Top Countries</h3>
+				</div>
+				<div class="row mt-3">
+
+					<div class="col-md-6 col-lg-3 cust-card trending_icons">
+						<a href="/package/Packagelist?Slug=Georgia">
+							<div class="card text-white back_card">
+								<img src="/images/top-1.png" class="card-img imagcol" alt="..." />
+
+								<div class="card-img-overlay d-flex flex-column justify-content-center cus_over ">
+									<h4 class="card-title text-center cus_colur">
+										Georgia
+									</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-6 col-lg-3 cust-card">
+						<a href="package/Packagelist?Slug=Kyrgyzstan">
+							<div class="card text-white back_card">
+
+								<img src="/images/top-2.png" class="card-img imagcol" alt="..." />
+								<div class="card-img-overlay d-flex flex-column justify-content-center cus_overlay">
+									<h4 class="card-title text-center cus_colur">
+										Kyrgyzstan
+									</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="col-md-6 col-lg-3 cust-card">
+						<a href="package/Packagelist?Slug=Azerbaijan">
+							<div class="card text-white back_card">
+
+								<img src="/images/top-3.png" class="card-img imagcol" alt="..." />
+								<div class="card-img-overlay d-flex flex-column justify-content-center cus_over">
+									<h4 class="card-title text-center cus_colur">
+										Azerbaijan
+									</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+
+
+					<div class="col-md-6 col-lg-3 cust-card">
+						<a href="package/Packagelist?Slug=Nepal">
+							<div class="card text-white back_card">
+								<img src="/images/top-4.png" class="card-img imagcol" alt="..." />
+								<div class="card-img-overlay d-flex flex-column justify-content-center cus_over over_itm">
+									<h4 class="card-title text-center cus_colur">
+										Nepal
+									</h4>
+								</div>
+							</div>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- end section -->
+	<!-- dubai group -->
+	<section class="dubai_group_section mt-5">
+		<div class="container">
+			<div class="row">
+				<h2> Dubai Group Tour </h2>
+			</div>
+
+			<div class="col-md-7 mx-auto">
+				<div class="row ">
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="visa_service_card_wrapper">
+							<div class="visa_card_img">
+								<img src="/images/desert_safari01.png" alt="img">
+							</div>
+							<div class="visa_card_text">
+								<h6 class="plc_title">
+									<a href="#"><strong>  Desert Safari  </strong></a>
+								</h6>
+								<span>  Starting at AED 1300 </span>
+
+							</div>
+
+
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="visa_service_card_wrapper">
+							<div class="visa_card_img">
+								<img src="/images/hot_baloon02.png" alt="img">
+							</div>
+							<div class="visa_card_text">
+								<h6 class="plc_title"><strong>  Hot Air Balloon	</strong></h6>
+								<span>  Starting at AED 1300 </span>
+							</div>
+
+
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<div class="visa_service_card_wrapper">
+							<div class="visa_card_img">
+								<img src="/images/helicopter_ride03.png" alt="img">
+							</div>
+							<div class="visa_card_text">
+								<h6 class="plc_title">
+									<a href="#"><strong>  Helicopter Ride </strong></a>
+								</h6>
+								<span>  Starting at AED 1300 </span>
+
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end section -->
+	<!-- Top pakages -->
+	<section class="section_padding pt-5 top_packages">
+		<div class="container">
+			<div class="pop_dubai">
+				<div class="row">
+					<h4 class="over_head mb-4">Top Packages</h4>
+				</div>
+				<!-- inner content -->
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-12 pdding_left">
+						<div class="visa_service_card_wrapper">
+
+							<div class="visa_card_img">
+								<img src="/images/top_dubai03.png" alt="img" />
+							</div>
+							<div class="visa_card_text">
+								<h6 class="plc_title">
+									<a href="/package/packagedetail?Slug=Dubai-city-tour-package"><strong> Staycation Dubai </strong></a>
+								</h6>
+								<ul class="hotel_inlcuded">
+									<li><i class="fa fa-clock"></i>  2 Nights & 3 Days </li>
+									<li><i class="fas fa-bed"></i>  Hotels Included </li>
+									<li><i class="fas fa-plane-departure"></i> Flights Not Included </li>
+									<li><i class="fas fa-car"></i>  Transfers Included</li>
+								</ul>
+							</div>
+							<div class="col-md-12">
+								<div class="row p-3 pt-0">
+									<div class="trsms-foots mt-2 col-md-12">
+										<div class="flts-flex d-flex align-items-end justify-content-between">
+											<div class="flts-flex-strat">
+												<span>  Starts from </span>
+												<div class="d-flex align-items-center">
+													<div class="text-dark fw-bold price_total">AED 595.00</div>
+													<div class="text-muted-2 fw-medium ms-2">Per person</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-12 pdding_left">
+						<div class="visa_service_card_wrapper">
+
+							<div class="visa_card_img">
+								<img src="/images/top_dubai03.png" alt="img" />
+							</div>
+							<div class="visa_card_text">
+								<h6 class="plc_title">
+									<a href="/package/packagedetail?Slug=nepal-tour-eid-al-adha-special"><strong> Nepal Eid Al Adha Fixed Departure </strong></a>
+								</h6>
+								<ul class="hotel_inlcuded">
+									<li><i class="fa fa-clock"></i>   4 Nights & 5 Days  </li>
+									<li><i class="fas fa-bed"></i>  Hotels Included </li>
+									<li><i class="fas fa-plane-departure"></i>  Flights Included </li>
+									<li><i class="fas fa-car"></i>  Transfers Included</li>
+								</ul>
+							</div>
+							<div class="col-md-12">
+								<div class="row p-3 pt-0">
+									<div class="trsms-foots mt-2 col-md-12">
+										<div class="flts-flex d-flex align-items-end justify-content-between">
+											<div class="flts-flex-strat">
+												<span>  Starts from </span>
+												<div class="d-flex align-items-center">
+													<div class="text-dark fw-bold price_total">AED 2899.00</div>
+													<div class="text-muted-2 fw-medium ms-2">Per person</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-12 pdding_left">
+						<div class="visa_service_card_wrapper">
+
+							<div class="visa_card_img">
+								<img src="/images/top_dubai03.png" alt="img" />
+							</div>
+							<div class="visa_card_text">
+								<h6 class="plc_title">
+									<a href="/package/packagedetail?Slug=bishkek-tour-package-eid-al-adha-holidays"><strong> Kyrgyzstan EID Al Adha Fixed Departure </strong></a>
+								</h6>
+								<ul class="hotel_inlcuded">
+									<li><i class="fa fa-clock"></i>  3 Nights & 4 Days </li>
+									<li><i class="fas fa-bed"></i>  Hotels Included </li>
+									<li><i class="fas fa-plane-departure"></i> Flights Included </li>
+									<li><i class="fas fa-car"></i>  Transfers Included</li>
+								</ul>
+							</div>
+							<div class="col-md-12">
+								<div class="row p-3 pt-0">
+									<div class="trsms-foots mt-2 col-md-12">
+										<div class="flts-flex d-flex align-items-end justify-content-between">
+											<div class="flts-flex-strat">
+												<span>  Starts from </span>
+												<div class="d-flex align-items-center">
+													<div class="text-dark fw-bold price_total">AED 2999.00</div>
+													<div class="text-muted-2 fw-medium ms-2">Per person</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- slide min -->
+	<!-- end section -->
+
+
+	<section id="cta_area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-8">
+					<div class="cta_left">
+						<div class="cta_content">
+							<h3>Plan your Next Holidays</h3>
+							<h5>Request For Call back. Know more about the latest travel trends &amp; deals!</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="cat_form">
+						<form id="cta_form_wrappper">
+							<div class="input-group">
+								<button class="btn btn_theme1 btn_md cta" onclick="if (!window.__cfRLUnblockHandlers) return false; OpenEnquiryPopup()" type="button" data-cf-modified-1c27f91526c4e63b56c8dc46->Get a Call from Us</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+</div>
+
+
+
+@section Scripts {
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+	<script>
+		var app = angular.module('Home', []);
+
+		// Define controller with $location and $http services
+		app.controller('HomeController', ['$scope', '$location', '$http', function ($scope, $location, $http) {
+			// Function to extract the slug from the URL
+
+
+		}]);
+
+
+	</script>
+
+}

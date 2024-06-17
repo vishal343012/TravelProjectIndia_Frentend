@@ -1,0 +1,878 @@
+﻿@{
+	ViewData["Title"] = "Checkout";
+}
+
+
+<section class="pt-5 check_out_form mt-5">
+	<div class="container">
+		<h5 class="text-center regitersection" id="loginTrigger">
+			Already registered? <span class="text-dark fw-bold">Log In</span>
+		</h5>
+		<!-- Login Modal -->
+		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginModal" aria-hidden="true">
+			<div class="modal-dialog custom-modal-width" role="document">
+				<div class="modal-content">
+					<div class="modal-body p-0 m-0">
+						<div class="row">
+							<div class="col-lg-6 p-0" style="position: relative;">
+								<img src="/img/hotel/hotel-2.jpg" class="img-fluid" alt="Logo" style="height: 100%;">
+								<div class="new_image">
+									<h2 class="new_signin" onclick="showSignIn()">LOG IN</h2>
+									<h2 class="new_loginn" style="color: #fff;" onclick="showSignUp()">SIGN UP</h2>
+								</div>
+							</div>
+
+							<div class="col-lg-6 p-3">
+
+								<!-- ye -->
+								<form id="signInForm" class="new_formm">
+									<div class="mb-3 mt-3 text-center">
+										<img src="https://d5ohkitzini5f.cloudfront.net/NHEidlogo.png"
+											 class="logo new_widthset" alt="">
+									</div>
+									<div class="mb-3">
+										<label for="email" class="form-label">Email Address</label>
+										<input type="email" class="form-control form-modalll" id="loginEmail"
+											   placeholder="Enter your email">
+									</div>
+									<div class="mb-3">
+										<label for="password" class="form-label">Password</label>
+										<input type="password" class="form-control form-modalll" id="loginPassword"
+											   placeholder="Enter your password">
+									</div>
+									<div class="mb-3">
+										<a href="#" class="float-end text-dark fs-25">Forgot Password?</a>
+									</div>
+									<button type="submit" class="new_modalbut">Login</button>
+									<div class="mt-3">
+										<p class="text-center">
+											Don't have an account? <a href="#" onclick="showSignUp()">Sign Up</a>
+										</p>
+									</div>
+								</form>
+
+								<form id="signUpForm" class="new_formm" style="display: none;">
+									<!-- Sign up form content -->
+									<!-- ye hia dono code  -->
+									<div class="mb-3 mt-3 text-center">
+										<img src="https://d5ohkitzini5f.cloudfront.net/NHEidlogo.png"
+											 class="logo new_widthset" alt="">
+									</div>
+									<div class="row">
+										<div class="col-lg-6">
+											<div class="mb-3">
+												<label for="email" class="form-label">First Name</label>
+												<input type="text" class="form-control form-modalll" id="SignUpFirstName"
+													   placeholder="Enter your First Name" required>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="mb-3">
+												<label for="password" class="form-label">Last Name</label>
+												<input type="text" class="form-control form-modalll" id="SignUpLastName"
+													   placeholder="Enter your Last Name">
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="mb-3">
+												<label for="email" class="form-label">Email ID</label>
+												<input type="email" class="form-control form-modalll" id="signUpEmail"
+													   placeholder="Enter your email" required>
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="mb-3">
+												<label for="password" class="form-label">Password</label>
+												<input type="password" class="form-control form-modalll" id="signUpPassword"
+													   placeholder="Enter your password">
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="mb-3">
+												<label for="Country" class="form-label">Select Country</label>
+												@* <select class="form-select form_mod_select" aria-label="Default select example">
+												<option selected>India</option>
+												<option value="1">One</option>
+												<option value="2">Two</option>
+												<option value="3">Three</option>
+												</select> *@
+
+												<select id="country" class="form-select form_mod_select" aria-label="Default select example">
+													<option value="0" selected>Select Country</option>
+												</select>
+											</div>
+										</div>
+
+										<div class="col-lg-6">
+											<div class="mb-3">
+												<label for="city" class="form-label">City</label>
+												@* <select class="form-select form_mod_select" aria-label="Default select example">
+												<option selected>Rajasthan</option>
+												<option value="1">One</option>
+												<option value="2">Two</option>
+												<option value="3">Three</option>
+												</select> *@
+												<select id="city" class="form-select form_mod_select" aria-label="Default select example">
+													<option value="0" selected>Select City</option>
+												</select>
+
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="mb-3">
+												<label for="password" class="form-label">Number</label>
+												<input type="number" class="form-control form-modalll" id="signUpMobile"
+													   placeholder="Enter your mobileNo">
+											</div>
+										</div>
+										<div class="col-lg-6">
+											<div class="mb-3">
+												<label for="password" class="form-label">How did you find us?</label>
+												<select id="HearAboutUs" class="form-select form_mod_select" aria-label="Default select example">
+													<option value="">Select Option</option>
+													<option value="Facebook">Facebook</option>
+													<option value="Instagram">Instagram</option>
+													<option value="Snapchat">Snapchat</option>
+													<option value="Tiktok">Tiktok</option>
+													<option value="Friend/Family Reffer">Friend/Family Reffer</option>
+													<option value="Other">Other</option>
+												</select>
+											</div>
+										</div>
+
+									</div>
+
+									<button type="submit" onclick="Register(event)" class="new_modalbut">Login</button>
+									<div class="mt-3">
+										<p class="text-center">
+											Already a member? <a href="#" onclick="showSignIn()">Login here</a>
+
+										</p>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Login Modal -->
+
+		<div class="row">
+			<div class="col-xl-8 col-lg-8 col-md-12">
+				<div class="div-title d-flex align-items-center mb-3">
+					<h4> Personal Details</h4>
+				</div>
+				<div class="card mb-3">
+
+					<div class="card-body">
+						<div class="row">
+
+							<div class="col-xl-6 col-lg-6 col-md-6">
+								<div class="form-group">
+									<label class="form-label">Name</label>
+									<input type="text" id="cfname" class="form-control" placeholder="First Name">
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6">
+								<div class="form-group">
+									<label class="form-label">Last Name</label>
+									<input type="text" id="cLname" class="form-control" placeholder="Last Name">
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6">
+								<div class="form-group">
+									<label class="form-label"> Select Country</label>
+									<select class="select form-control" required id="CCountryId" onchange="GetCities()">
+									</select>
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6">
+								<div class="form-group">
+									<label class="form-label">Email ID</label>
+									<input type="text" class="form-control" id="cemail" placeholder="xyz@gmail.com">
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6">
+								<div class="form-group">
+									<label class="form-label">Phone</label>
+									<input type="text" class="form-control" id="cphone" placeholder="Phone Number">
+								</div>
+							</div>
+
+							<div class="col-xl-6 col-lg-6 col-md-6">
+								<div class="form-group">
+									<label class="form-label"> Gender</label>
+									<select class="select form-control" id="cgender">
+										<option value="">select Gender</option>
+										<option value="Male">Male</option>
+										<option value="Female">Female</option>
+									</select>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="div-title d-flex align-items-center mb-3">
+					<h4> Credit/Debit Card </h4>
+				</div>
+
+				<div class="card mb-3">
+					<div class="card-body">
+						<div class="row">
+							<div class="col-xl-6 col-lg-6 col-md-6">
+								<div class="form-group">
+									<label class="form-label"> Card Holder Name</label>
+									<input type="text" class="form-control" placeholder="First Name" />
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6">
+								<div class="form-group">
+									<label class="form-label">Card Number</label>
+									<input type="text" class="form-control" placeholder="Last Name" />
+								</div>
+							</div>
+
+							<div class="col-xl-3 col-lg-6 col-md-6">
+								<div class="form-group">
+									<label class="form-label">Month</label>
+									<input type="text" class="form-control" placeholder="Month" />
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-6">
+								<div class="form-group">
+									<label class="form-label">Year</label>
+									<input type="text" class="form-control" placeholder="Year" />
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6">
+								<div class="form-group">
+									<label class="form-label">CVV</label>
+									<input type="text" class="form-control" placeholder="***" />
+								</div>
+							</div>
+							<div class="modal-flex-first">
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="checkbox" id="savepassword"
+										   value="option1">
+									<label class="form-check-label" for="savepassword">
+										I read and accept all
+										Terms & conditions
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+			<div class="col-xl-4 col-lg-4 col-md-12 mt-5">
+				<div class="side-block card rounded-2 p-3">
+					<h5 class="fw-semibold fs-6">Reservation Summary</h5>
+					<div class="mid-block rounded-2 border br-dashed p-2 mb-3">
+						<div class="row align-items-center justify-content-between g-2 mb-0">
+							<div class="col-12 book_date_info">
+								<div class="gray rounded-2 p-2 d-flex align-items-center">
+									<div class="square--30 circle text-seegreen bg-light-seegreen ico_bg">
+										<i class="fa-regular fa-calendar"></i>
+									</div>
+									<p class="text-dark fw-semibold lh-base mb-0" id="traverDate"> </p>
+								</div>
+							</div>
+							<div class="col-12 book_member_info">
+								<div class="gray rounded-2 p-2 d-flex align-items-center">
+									<div class="square--30 circle text-seegreen bg-light-seegreen ico_bg">
+										<i class='fas fa-male'></i>
+									</div>
+									<p class="text-dark fw-semibold lh-base mb-0" id="totalmember">
+										@* Total Member: 4 (3 Adults, 1
+										Child) *@
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="bott-block d-block mb-3">
+						<h5 class="fw-semibold fs-6">Your Price Summary</h5>
+						<ul class="list-group list-group-borderless">
+
+							<li class="list-group-item d-flex justify-content-between align-items-center">
+								<span class="fw-medium mb-0" id="packageName"> Dubai Desert Safari </span>
+								<span class="fw-semibold" id="price">AED 00</span>
+							</li>
+							<li class="list-group-item d-flex justify-content-between align-items-center">
+								<span class="fw-medium mb-0"><strong> Grand Total </strong></span>
+								<span class="fw-semibold" id="totlePrice"><strong> AED 00 </strong></span>
+							</li>
+						</ul>
+					</div>
+					<div class="bott-block">
+						<button class="btn fw-medium btn-primary full-width" type="button">
+							Confirm &
+							Pay
+						</button>
+					</div>
+				</div>
+
+				<div class="card border rounded-3 mt-4">
+					<div class="card-header">
+						<h4>Coupons &amp; Offers</h4>
+					</div>
+					<div class="card-body">
+						<div class="form-group position-relative">
+							<input type="text" class="form-control" placeholder="Have a Coupon Code?" value="">
+							<a href="#"
+							   class="position-absolute top-50 end-0 fw-semibold translate-middle text-primary disable">Apply</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+<section id="cta_area">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-lg-8">
+				<div class="cta_left">
+					<div class="cta_content">
+						<h3>Plan your Next Holidays</h3>
+						<h5>Request For Call back. Know more about the latest travel trends &amp; deals!</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="cat_form">
+					<form id="cta_form_wrappper">
+						<div class="input-group">
+							<button class="btn btn_theme1 btn_md cta" onclick="if (!window.__cfRLUnblockHandlers) return false; OpenEnquiryPopup()" type="button" data-cf-modified-1c27f91526c4e63b56c8dc46->Get a Call from Us</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+@section Scripts {
+
+	<script type="text/javascript">
+		// Acc
+		$(document).on("click", ".naccs .menu div", function () {
+			var numberIndex = $(this).index();
+
+			if (!$(this).is("active")) {
+				$(".naccs .menu div").removeClass("active");
+				$(".naccs ul li").removeClass("active");
+
+				$(this).addClass("active");
+				$(".naccs ul").find("li:eq(" + numberIndex + ")").addClass("active");
+
+				var listItemHeight = $(".naccs ul")
+					.find("li:eq(" + numberIndex + ")")
+					.innerHeight();
+				$(".naccs ul").height(listItemHeight + "px");
+			}
+		});
+	</script>
+	<script src="~/js/jscommonajaxcall.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script>
+		document.getElementById('loginTrigger').addEventListener('click', function () {
+			$('#login').modal('show');
+		});
+	</script>
+	<script>
+		function showSignIn() {
+			debugger;
+			document.getElementById('signInForm').style.display = 'block';
+			
+			document.getElementById('signUpForm').style.display = 'none';
+			document.querySelector('.new_signin').style.backgroundColor = 'white';
+			document.querySelector('.new_signin').classList.add('active_new');
+			document.querySelector('.new_loginn').classList.remove('active_new');
+		}
+
+		function showSignUp() {
+			document.getElementById('signInForm').style.display = 'none';
+			document.getElementById('signUpForm').style.display = 'block';
+			document.querySelector('.new_loginn').classList.add('active_new');
+			document.querySelector('.new_signin').style.backgroundColor = 'transparent';
+			fetchCountryList();
+			document.getElementById('country').addEventListener('change', function () {
+				const countryId = this.value;
+				if (countryId !== "0") {
+					fetchCityData(countryId);
+				}
+				else {
+					const selectElement = document.getElementById('city');
+					selectElement.innerHTML = '<option selected disabled>Select a city</option>';
+				}
+			});
+
+
+
+
+		}
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script>
+
+
+		var userData = {};
+
+		var verify = JSON.parse(sessionStorage.getItem('verify'));
+		if (verify !==null) {
+			sessionStorage.setItem('triggerClick', 'true');
+			sessionStorage.removeItem('verify');
+			location.reload();
+		}
+		var paymentData = {};
+
+		document.addEventListener('DOMContentLoaded', (event) => {
+			var triggerClick = sessionStorage.getItem('triggerClick');
+			var id = sessionStorage.getItem('UserId');
+			if (triggerClick === 'true' || id == null) {
+				sessionStorage.removeItem('triggerClick');
+				document.getElementById('loginTrigger').click();
+			}
+			else 
+			{
+				//gautam
+				getUserData(result.userId)
+					.then(data => {
+						console.log('userdata', data);
+
+
+						const packageDataJSON = sessionStorage.getItem('packageData');
+
+						const packageOptionsJSON = sessionStorage.getItem('packageOptions');
+						const packageOptions = JSON.parse(packageOptionsJSON);
+						document.getElementById('cfname').value = userData.firstName || '';
+						document.getElementById('cLname').value = userData.lastName || '';
+						// Assuming CCountryId is a select element
+						document.getElementById('CCountryId').value = userData.countryId || 0;
+						document.getElementById('cemail').value = userData.emailId || '';
+						document.getElementById('cphone').value = userData.mobileNumber || '';
+						// Assuming genderSelect is the ID of the select element for gender
+						document.getElementById('cgender').value = userData.gender || '';
+
+
+						if (packageDataJSON) {
+							// Parse the JSON string back to an object
+							const packageData = JSON.parse(packageDataJSON);
+
+
+							// Update package name
+							document.getElementById('packageName').innerText = packageData.packageName || '';
+
+							// Update travel date
+							document.getElementById('traverDate').innerText = packageData.selectedDate || '';
+
+							console.log('packageOptionsJSON', packageOptionsJSON);
+
+							const adultCount = packageOptions.options[0].NoOfAdult;
+							const childCount = packageOptions.options[0].NoOfChild;
+							const infantCount = packageOptions.options[0].NoOfInfant;
+
+							// Construct the text content
+							const totalMemberText = "Total Member: " + adultCount + " Adult, " + childCount + " Child, " + infantCount + " Infant";
+
+							// Set the text content of the element
+							document.getElementById('totalmember').innerText = totalMemberText;
+							// Update price
+							document.getElementById('price').innerText = paymentData.amount;
+
+							// Update total price
+							document.getElementById('totlePrice').innerText = paymentData.amount;
+							window.location.reload();
+
+
+						}
+						else {
+							console.log("No package data found in sessionStorage");
+						}
+
+
+
+
+
+
+
+
+					})
+					.catch(error => console.error(error));
+
+
+			}
+
+
+			const userIdJSON = sessionStorage.getItem('UserId');
+			console.log("userIdJSON", userIdJSON);
+			if (userIdJSON) 
+			{
+				const userId = JSON.parse(userIdJSON);
+
+				console.log(userId);
+			}
+
+
+
+		});
+
+		function fetchCountryList()
+		{
+			const url = 'https://nextholidaysinadiaapi.nextholidays.co.in/User/GetCountryList';
+
+			fetch(url)
+				.then(response => {
+					if (!response.ok) {
+						throw new Error('Network response was not ok ' + response.statusText);
+					}
+					return response.json();
+				})
+				.then(data => {
+					const selectElement = document.getElementById('country');
+
+					data.forEach(country => {
+						const option = document.createElement('option');
+						option.value = country.ID;
+						option.textContent = country.Name;
+						selectElement.appendChild(option);
+					});
+				})
+				.catch(error => {
+					console.error('There was a problem with the fetch operation:', error);
+				});
+		}
+
+
+		function fetchCityData(countryId) {
+			const apiUrl = `https://nextholidaysinadiaapi.nextholidays.co.in/User/GetCityList?CountryId=${countryId}`;
+			fetch(apiUrl)
+				.then(response => response.json())
+				.then(data => {
+					const selectElement = document.getElementById('city');
+
+					selectElement.innerHTML = '<option selected disabled>Select a city</option>';
+
+					data.forEach(city => {
+						const option = document.createElement('option');
+						option.value = city.ID;
+						option.textContent = city.Name;
+						selectElement.appendChild(option);
+					});
+				})
+				.catch(error => {
+					console.error('Error fetching city data:', error);
+				});
+		}
+
+
+		function generateOTP(emailId) {
+			debugger;
+			const apiUrl = 'https://nextholidaysinadiaapi.nextholidays.co.in/User/GenerateOTP';
+			const payload = {
+				Emailid: emailId
+			};
+
+			fetch(apiUrl, {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify(payload)
+			})
+			.then(response => {
+				if (!response.ok) {
+					throw new Error('Network response was not ok');
+				}
+				return response.json();
+			})
+			.then(data => {
+				console.log(data.message);
+				// Handle success response
+			})
+			.catch(error => {
+				console.error('Error generating OTP:', error);
+				// Handle error response
+			});
+		}
+
+		// Function to fetch user data
+
+		async function getUserData(userID) {
+			debugger;
+			const apiUrl = 'https://nextholidaysinadiaapi.nextholidays.co.in/User/GetUserData';
+			userID += "";
+
+			const requestBody = {
+				"EmailId": userID
+			};
+
+			try {
+				const response = await fetch(apiUrl, {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify(requestBody)
+				});
+
+				if (!response.ok) {
+					throw new Error('Network response was not ok ' + response.statusText);
+				}
+
+				const text = await response.text();
+
+				if (!text) {
+					throw new Error('Response body is empty');
+				}
+
+				const data = JSON.parse(text);
+				userData = data
+				return data;
+			} catch (error) {
+				console.error('There was a problem with the fetch operation:', error);
+			}
+		}
+
+
+
+		async function Register(event) {
+			event.preventDefault();
+
+			const firstName = document.getElementById('SignUpFirstName').value;
+			const lastName = document.getElementById('SignUpLastName').value;
+			const email = document.getElementById('signUpEmail').value;
+			const password = document.getElementById('signUpPassword').value;
+			const mobile = document.getElementById('signUpMobile').value;
+
+			const countryId = document.getElementById('country').value;
+			const cityId = document.getElementById('city').value;
+			const hearAboutUs = document.getElementById('HearAboutUs').value;
+			const countryCode = 0;
+
+			const UsersEnt = {
+				UserId: 0,
+				FirstName: firstName,
+				LastName: lastName,
+				Gender: '',
+				DOB: '',
+				EmailId: email,
+				CountryCode: parseInt(countryCode, 10),
+				MobileNumber: mobile,
+				CountryId: parseInt(countryId, 10),
+				CityId: parseInt(cityId, 10),
+				IsActive: 0,
+				Password: password,
+				HearAboutUs: hearAboutUs
+			};
+
+			console.log(UsersEnt);
+			debugger;
+			try {
+				const response = await fetch('https://nextholidaysinadiaapi.nextholidays.co.in/User/RegisterUser', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify(UsersEnt)
+				});
+
+				if (response.ok) {
+					const result = await response.json();
+					console.log(result);
+					if (result.status == 2) {
+						alert("Registration successful...");
+						console.log('Registration successful:', result.message);
+						// localStorage.setItem('UsersEnt', JSON.stringify(UsersEnt));
+						generateOTP(UsersEnt.EmailId);
+						sessionStorage.setItem('UsersEemail', JSON.stringify(UsersEnt.EmailId));
+						sessionStorage.setItem('TempUser', JSON.stringify(result.message));
+						window.location.href = '/home/Verification';
+
+					}
+					else if (result.status == 1) {
+						alert("Registration successful...");
+						console.log('Registration successful:', result.message);
+						sessionStorage.setItem('UsersEemail', JSON.stringify(UsersEnt.EmailId));
+						sessionStorage.setItem('TempUser', JSON.stringify(result.message));
+						showSignIn();
+					}
+					else 
+					{
+						alert(result.message);
+						
+					}
+
+				}
+				else {
+					console.error('Registration failed:', response.statusText);
+				}
+			} catch (error) {
+				console.error('Error:', error);
+			}
+		}
+
+		document.getElementById('signInForm').addEventListener('submit', async function (event) {
+			event.preventDefault();
+			debugger;
+			const loginEmail = document.getElementById('loginEmail').value;
+			const loginPassword = document.getElementById('loginPassword').value;
+
+			try {
+				const apiUrl = `https://nextholidaysinadiaapi.nextholidays.co.in/User/LoginUser?EmailId=${loginEmail}&Password=${loginPassword}`;
+
+				const response = await fetch(apiUrl, {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					}
+				});
+
+				if (response.ok) {
+					const result = await response.json();
+					console.log(result);
+					if (result.status == 1) {
+						alert("Login successful...");
+						console.log('Login successful:', result.message);
+						// Redirect to another page if needed
+						sessionStorage.setItem('UserId', JSON.stringify(result.userId));
+						sessionStorage.removeItem('UsersEemail');
+						sessionStorage.removeItem('TempUser');
+						paymentData = sessionStorage.getItem('paymentData');
+						paymentData = JSON.parse(paymentData);
+						console.log("paymentData", paymentData);
+
+						if (paymentData != null && Object.keys(paymentData).length != 0) {
+							
+							paymentData.Userid = result.userId;
+							console.log(paymentData);
+
+
+							getUserData(result.userId)
+								.then(data => {
+									console.log('userdata', data);
+
+
+									const packageDataJSON = sessionStorage.getItem('packageData');
+
+									const packageOptionsJSON = sessionStorage.getItem('packageOptions');
+									const packageOptions = JSON.parse(packageOptionsJSON);
+
+									if (packageDataJSON)
+									{
+										// Parse the JSON string back to an object
+										const packageData = JSON.parse(packageDataJSON);
+
+
+
+										document.getElementById('cfname').value = userData.firstName || '';
+										document.getElementById('cLname').value = userData.lastName || '';
+										// Assuming CCountryId is a select element
+										document.getElementById('CCountryId').value = userData.countryId || 0;
+										document.getElementById('cemail').value = userData.emailId || '';
+										document.getElementById('cphone').value = userData.mobileNumber || '';
+										// Assuming genderSelect is the ID of the select element for gender
+										document.getElementById('cgender').value = userData.gender || '';
+
+										// Update package name
+										document.getElementById('packageName').innerText = packageData.packageName || '';
+
+										// Update travel date
+										document.getElementById('traverDate').innerText = packageData.selectedDate || '';
+
+										console.log('packageOptionsJSON', packageOptionsJSON);
+
+										const adultCount = packageOptions.options[0].NoOfAdult;
+										const childCount = packageOptions.options[0].NoOfChild;
+										const infantCount = packageOptions.options[0].NoOfInfant;
+
+										// Construct the text content
+										const totalMemberText = "Total Member: " + adultCount + " Adult, " + childCount + " Child, " + infantCount + " Infant";
+
+										// Set the text content of the element
+										document.getElementById('totalmember').innerText = totalMemberText;
+										// Update price
+										document.getElementById('price').innerText = paymentData.amount;
+
+										// Update total price
+										document.getElementById('totlePrice').innerText = paymentData.amount;
+										window.location.reload();
+
+
+									} 
+									else {
+										console.log("No package data found in sessionStorage");
+									}
+
+
+
+									
+
+
+									
+
+								})
+								.catch(error => console.error(error));
+
+
+
+							sessionStorage.setItem('paymentData', JSON.stringify(paymentData));
+						}
+						// window.location.reload();
+						var checkout=JSON.parse(sessionStorage.getItem('checkout'));
+						if (checkout != null) {
+							window.location.href = checkout;
+						}
+						
+					} else if (result.status == 2) 
+					{
+						sessionStorage.setItem('TempUser', JSON.stringify(result.message));
+						alert('Login failed please Verify your email..');
+						sessionStorage.setItem('UsersEemail', JSON.stringify(loginEmail));
+						window.location.href = '/home/Verification';
+					}
+					else {
+						alert('Login failed: ');
+					}
+				} else {
+					alert('Login failed: ' + response.statusText);
+					console.error('Login failed:', response.statusText);
+				}
+			} catch (error) {
+				alert('Error: ' + error.message);
+				console.error('Error:', error);
+			}
+
+		});
+
+
+		// var id = sessionStorage.getItem('UserId');
+		// if (id != null) {
+
+		// 	var paymentData=sessionStorage.getItem('paymentData');
+		// 	paymentData.Userid = id;
+		// 	console.log(id);
+		// 	console.log('paymentData', paymentData)
+		// }
+
+
+
+
+	</script>
+
+}
